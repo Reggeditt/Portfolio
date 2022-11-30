@@ -17,7 +17,6 @@ header {
   flex-direction: column;
   position: absolute;
   top: 0;
-  /* padding-top: 20px; */
 }
 
 header * {
@@ -26,16 +25,22 @@ header * {
   margin-inline-end: 0;
   margin: auto;
 }
-header h1,#time {
+
+header h1 {
   display: inline;
   color: white;
-  margin:auto;
+  margin: auto;
 }
 
-header nav, #icons {
-  /* float: right; */
+#time {
+  display: inline;
+  color: white;
+  margin: auto;
+}
+
+header nav {
   align-self: center;
-  justify-self:right;
+  justify-self: right;
   justify-content: flex-end;
   align-items: flex-end;
   display: inline;
@@ -43,18 +48,26 @@ header nav, #icons {
 }
 
 #icons {
+  align-self: center;
+  justify-self: right;
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: inline;
+  position: relative;
   margin-left: 250px;
 }
+
 nav img {
   margin-left: 180px;
 }
+
 .nav-links {
   position: absolute;
 }
+
 main {
   margin-top: 24.5vw;
   width: 100vw;
-  
 }
 
 .hero {
@@ -69,20 +82,18 @@ main {
 }
 
 .hero * {
-    width: 327px;
-    word-wrap: normal;
+  width: 327px;
 }
+
 .hero .header {
   color: #ff6b00;
   font-size: 56px;
   font-weight: 400;
-  /* font-family: "Crete Round"; */
   line-height: 64px;
 }
 
 .hero .sub-header {
   color: #fff5e1;
-  /* font-family: 'Roboto'; */
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -91,14 +102,13 @@ main {
 
 .hero .description {
   color: #fff;
-  /* font-family: poppins; */
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
-.social-icons *{
-    width: 18px;
-    height: 20px;
-    margin: auto 10px;
+.social-icons * {
+  width: 18px;
+  height: 20px;
+  margin: auto 10px;
 }
