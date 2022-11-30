@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -14,7 +13,6 @@ header {
   width: 100vw;
   height: 24.5vw;
   display: flex;
-  flex-direction: column;
   position: absolute;
   top: 0;
 }
@@ -29,13 +27,7 @@ header * {
 header h1 {
   display: inline;
   color: white;
-  margin: auto;
-}
-
-#time {
-  display: inline;
-  color: white;
-  margin: auto;
+  /* margin: auto; */
 }
 
 header nav {
@@ -45,16 +37,6 @@ header nav {
   align-items: flex-end;
   display: inline;
   position: relative;
-}
-
-#icons {
-  align-self: center;
-  justify-self: right;
-  justify-content: flex-end;
-  align-items: flex-end;
-  display: inline;
-  position: relative;
-  margin-left: 250px;
 }
 
 nav img {
@@ -111,4 +93,14 @@ main {
   width: 18px;
   height: 20px;
   margin: auto 10px;
+}
+
+.artwork {
+  width: 150px;
+  height: 311px;
+  transform: rotate(-0.5deg);
+  /* float: right; */
+  position: absolute;
+  left: 225px;
+  top: 350px;
 }
