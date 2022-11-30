@@ -76,13 +76,13 @@ main {
   color: #ff6b00;
   font-size: 56px;
   font-weight: 400;
-  font-family: "Crete Round";
+  /* font-family: "Crete Round"; */
   line-height: 64px;
 }
 
 .hero .sub-header {
   color: #fff5e1;
-  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -91,7 +91,7 @@ main {
 
 .hero .description {
   color: #fff;
-  font-family: poppins;
+  /* font-family: poppins; */
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
