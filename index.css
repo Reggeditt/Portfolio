@@ -41,6 +41,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  line-height: 2px;
 }
 
 .hero .header {
