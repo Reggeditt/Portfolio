@@ -49,18 +49,20 @@ nav img {
 
 main {
   margin-top: 24.5vw;
-  width: 100vw;
+  width: 375px;
 }
 
 .hero {
   background-color: #1c1a19;
-  width: 100%;
+  width: 375px;
   height: 157.33vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px;
+  background-image: url(assets/images/Illustration.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 
 .hero * {
