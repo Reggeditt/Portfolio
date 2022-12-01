@@ -59,10 +59,11 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-image: url(assets/images/Illustration.png);
   background-repeat: no-repeat;
   background-position: bottom right;
+  background-size: 130px;
 }
 
 .hero * {
@@ -81,7 +82,7 @@ main {
   color: #fff5e1;
   font-family: Roboto, sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 32px;
   letter-spacing: 2px;
 }
