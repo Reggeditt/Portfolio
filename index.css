@@ -6,6 +6,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow-x: hidden;
 }
 
 header {
@@ -91,7 +92,8 @@ main {
 .social-icons * {
   width: 18px;
   height: 20px;
-  margin: auto 10px;
+  margin: auto 5px;
+  background-color: #1c1a19;
 }
 
 .artwork {
