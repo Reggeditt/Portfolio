@@ -118,3 +118,23 @@ main {
   left: 225px;
   top: 350px;
 }
+
+.works{
+  display: grid;
+  grid-template-columns: 90vw;
+  grid-template-rows: minmax(100px, 250px);
+  justify-content: center;
+  align-items: center;
+}
+.works-heading span {
+
+}
+
+.works-img {
+  background: linear-gradient(rgba(0,0,0,.8),
+  rgba(255,255,255,0.2)),
+  url(assets/images/Img-Placeholder.png);
+  width: 150px;
+  height: 180px;
+}
+
