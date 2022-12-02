@@ -12,7 +12,7 @@ body {
 header {
   background-color: #3c3a39;
   width: 375px;
-  height: 24.5vw;
+  height: 150px;
   display: flex;
   position: absolute;
   top: 0;
@@ -51,12 +51,16 @@ main {
   margin-top: 24.5vw;
   width: 375px;
   height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero {
   background-color: #1c1a19;
   width: 355px;
-  height: 157.33vw;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,9 +79,16 @@ main {
 .hero .header {
   color: #ff6b00;
   font-family: 'Crete Round', sans-serif;
-  font-size: 56px;
+  font-size: 53px;
   font-weight: 400;
   line-height: 64px;
+  margin: 20px 0 20px 15px;
+}
+
+#works-header-divider {
+  border: none;
+  border-bottom: 1px solid #212121;
+  margin-left: 5px;
 }
 
 .hero .sub-header {
@@ -258,12 +269,16 @@ a {
 }
 
 .about {
-  /* height: 2000px; */
   background-color: #1c1a19;
+  width: 375px;
+  height: 1500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .about-me {
-  height: 500px;
+  height: 600px;
   background-color: #1c1a19;
   background-image: url(assets/images/about-illustration.png);
   background-position: bottom right;
@@ -279,6 +294,7 @@ a {
 .abt-header {
   color: #ff6b00;
   font-size: 70px;
+  margin: 0;
 }
 
 .abt-sub-header {
@@ -292,11 +308,9 @@ hr {
   margin-left: 20px;
 }
 
-.about-metrics {
+.about-merits {
   background-color: #1c1a19;
-  height: 700px;
-  width: 100%;
-  line-height: 50px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -305,19 +319,23 @@ hr {
 
 .stacks-container {
   list-style: none;
+  letter-spacing: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 30px;
+  height: 800px;
+  padding: 0;
 }
 
 .stack {
   list-style: none;
-  height: 20px;
-  width: 100px;
   font-family: InaiMathi, sans-serif;
   font-size: 32px;
   font-weight: 400;
-  line-height: 40px;
   color: #fff;
   margin: 20px auto;
+  letter-spacing: 4px;
 }
 
 .one::before {
@@ -356,12 +374,16 @@ hr {
 }
 
 .stack-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style: none;
 }
 
 .stack-list-container li {
   font-family: 'Inter', sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   color: #fff;
+  margin: 10px auto;
 }
