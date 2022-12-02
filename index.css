@@ -121,20 +121,40 @@ main {
 
 .works{
   display: grid;
-  grid-template-columns: 90vw;
+  grid-template-columns: 350px;
   grid-template-rows: minmax(100px, 250px);
   justify-content: center;
   align-items: center;
 }
 .works-heading span {
-
+  font-size: 20px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid black;
 }
 
 .works-img {
   background: linear-gradient(rgba(0,0,0,.8),
   rgba(255,255,255,0.2)),
   url(assets/images/Img-Placeholder.png);
-  width: 150px;
-  height: 180px;
+  width: 350px;
+  height: 254px;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 2450px;
+}
+
+.project-card {
+  background: linear-gradient(rgba(0,0,0,.8),
+  rgba(255,255,255,0.2)),
+  url(assets/images/pjt-img-Placeholder.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 350px;
+  height: 400px;
+  color: #fff;
+}
