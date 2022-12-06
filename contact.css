@@ -26,6 +26,7 @@
   justify-content: space-around;
   align-items: center;
   width: 350px;
+  height: 600px;
   flex: 2;
 }
 
@@ -33,14 +34,16 @@
   border: none;
 }
 
-#name-input, #email-input {
+#name-input,
+#email-input {
   border-bottom: 1px solid #dbd8d7;
   box-sizing: content-box;
-  width: 320px;
+  width: 280px;
   margin-bottom: 50px;
 }
 
-input[type="text"], input[type="email"] {
+input[type="text"],
+input[type="email"] {
   padding: 5px 0  10px 20px;
   line-height: 60px;
   font-size: 18px;
@@ -48,7 +51,7 @@ input[type="text"], input[type="email"] {
 
 #comments-input {
   background-color: #fbf8f7;
-  width: 350px;
+  width: 280px;
   margin-bottom: 20px;
 }
 
