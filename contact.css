@@ -36,8 +36,8 @@
 #name-input, #email-input {
   border-bottom: 1px solid #dbd8d7;
   box-sizing: content-box;
-  /* width: 350px; */
-  /* margin-left: 50px; */
+  width: 320px;
+  margin-bottom: 50px;
 }
 
 input[type="text"], input[type="email"] {
@@ -48,6 +48,8 @@ input[type="text"], input[type="email"] {
 
 #comments-input {
   background-color: #fbf8f7;
+  width: 350px;
+  margin-bottom: 20px;
 }
 
 #comments-input::placeholder {
@@ -56,3 +58,6 @@ input[type="text"], input[type="email"] {
   font-weight: 400;
 }
 
+#contact-btn {
+  padding: 10px 20px;
+}
