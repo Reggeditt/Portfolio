@@ -1,7 +1,7 @@
 
 .hero {
   background-color: #1c1a19;
-  width: 355px;
+  /* this width makes it unresponsive -> width: 355px; */
   height: 650px;
   display: flex;
   flex-direction: column;

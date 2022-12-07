@@ -13,7 +13,7 @@ body {
 header {
   background-color: #3c3a39;
   width: 375px;
-  height: 150px;
+  height: 92px;
   display: flex;
   position: absolute;
   top: 0;
@@ -49,7 +49,7 @@ nav img {
 }
 
 main {
-  margin-top: 24.5vw;
+  margin-top: 10px;
   width: 375px;
   height: fit-content;
   display: flex;
