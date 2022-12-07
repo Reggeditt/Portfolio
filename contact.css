@@ -4,11 +4,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 375px; */
   height: 750px;
 }
 
-.contact-header{
+.contact-header {
   padding: 100px 0 30px 0;
 }
 
@@ -16,14 +15,13 @@
   margin: 0;
   flex: 3;
   width: 327px;
-  box-sizing: content-box; 
-  font-family: Inter;
+  box-sizing: content-box;
+  font-family: Inter, sans-serif;
   font-size: 32px;
   word-wrap: wrap;
   font-weight: 700;
   color: #172b4d;
   line-height: 40px;
-  letter-spacing: 0em;
   text-align: center;
 }
 
@@ -51,7 +49,7 @@
 
 input[type="text"],
 input[type="email"] {
-  padding-left: 10px ;
+  padding-left: 10px;
   line-height: 40px;
   font-size: 18px;
 }
@@ -60,15 +58,11 @@ input[type="email"] {
   background-color: #fbf8f7;
   width: 280px;
   margin-bottom: 20px;
-}
-
-#comments-input {
   padding: 8px 15px;
   font-family: Inter, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
 }
 
 #contact-btn {
