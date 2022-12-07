@@ -394,7 +394,8 @@ footer {
   border-top: 1px solid #dfe1e6;
   margin-top: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   position: relative;
 }
@@ -409,8 +410,6 @@ footer {
 }
 
 .baseline {
-  position: absolute;
-  bottom: 0;
   height: 5px;
   width: 140px;
   background-color: #0d151e;
@@ -418,6 +417,7 @@ footer {
   background-size: 10px;
   background-position: bottom;
   border-radius: 10px;
+  /* margin: 20px auto 5px auto; */
 }
 
 .btn:hover {
@@ -429,4 +429,11 @@ footer {
 .btn:active {
   background: #f55800;
   color: white;
+}
+
+.btn:disabled,
+.btn[disabled]{
+  border: none;
+  background-color: #f4f1f0;
+  color: #5b5957;
 }
