@@ -3,21 +3,28 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 375px;
-  height: 900px;
+  align-items: center;
+  /* width: 375px; */
+  height: 750px;
 }
 
-.contact h1 {
+.contact-header{
+  padding: 100px 0 30px 0;
+}
+
+.contact p {
+  margin: 0;
   flex: 3;
-  color: #172b4d;
-  font-size: 40px;
+  width: 327px;
+  box-sizing: content-box; 
+  font-family: Inter;
+  font-size: 32px;
+  word-wrap: wrap;
   font-weight: 700;
-  line-height: 44px;
+  color: #172b4d;
+  line-height: 40px;
+  letter-spacing: 0em;
   text-align: center;
-  width: 350px;
-  height: 216px;
-  padding: 10px;
-  box-sizing: content-box;
 }
 
 #contact-form {
@@ -44,8 +51,8 @@
 
 input[type="text"],
 input[type="email"] {
-  padding: 5px 0  10px 20px;
-  line-height: 60px;
+  padding-left: 10px ;
+  line-height: 40px;
   font-size: 18px;
 }
 
@@ -55,10 +62,13 @@ input[type="email"] {
   margin-bottom: 20px;
 }
 
-#comments-input::placeholder {
-  padding: 20px;
-  font-size: 20px;
+#comments-input {
+  padding: 8px 15px;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
   font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
 }
 
 #contact-btn {
