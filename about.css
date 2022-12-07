@@ -1,0 +1,120 @@
+
+.about {
+  background-color: #1c1a19;
+  width: 375px;
+  height: 1500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about-me {
+  height: 600px;
+  background-color: #1c1a19;
+  background-image: url(assets/images/about-illustration.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: space-between;
+  padding-left: 20px;
+}
+
+.abt-header {
+  color: #ff6b00;
+  font-size: 70px;
+  margin: 0;
+}
+
+.abt-sub-header {
+  color: #f4f5f7;
+}
+
+hr {
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+  width: 320px;
+  margin-left: 20px;
+}
+
+.about-merits {
+  background-color: #1c1a19;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stacks-container {
+  list-style: none;
+  /* letter-spacing: 3px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 800px;
+  padding: 0;
+}
+
+.stack {
+  list-style: none;
+  font-family: InaiMathi, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  margin: 20px auto;
+  letter-spacing: 4px;
+}
+
+  .one::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #ff6b00;
+  color: #ff6b00;
+  transform: rotate(-45deg);
+  z-index: 5;
+  margin-right: 20px;
+}
+
+.two::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #ff6b00;
+  color: #ff6b00;
+  z-index: 5;
+  margin-right: 20px;
+}
+
+.three::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #ff6b00;
+  color: #ff6b00;
+  border-radius: 50%;
+  z-index: 5;
+  margin-right: 20px;
+}
+
+.stack-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.stack-list-container li {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin: 10px auto;
+}
