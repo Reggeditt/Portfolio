@@ -1,0 +1,24 @@
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  header, 
+  main,
+  section, 
+  footer {
+    width: 100%;
+    display: flex;
+  }
+
+  .hero {
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+  }
+}
