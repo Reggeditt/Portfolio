@@ -6,26 +6,13 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖 [Portfolio] <a name="about-project"></a>
-
-> Describe your project in 1 or 2 sentences.
 
 **[Portfolio]** is an online portfolio website that shows all the projects I've worked on within a period of time.
 
@@ -51,9 +38,7 @@
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
-
+-->
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Kodjo-Sarso Tetteh**
@@ -61,12 +46,6 @@
 - GitHub: [@githubhandle](https://github.com/reggeddit)
 - Twitter: [@twitterhandle](https://twitter.com/tksarso)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/tetteh-kodjo-sarso-888989125)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
