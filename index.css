@@ -417,7 +417,6 @@ footer {
   background-size: 10px;
   background-position: bottom;
   border-radius: 10px;
-  /* margin: 20px auto 5px auto; */
 }
 
 .btn:hover {
@@ -432,7 +431,7 @@ footer {
 }
 
 .btn:disabled,
-.btn[disabled]{
+.btn[disabled] {
   border: none;
   background-color: #f4f1f0;
   color: #5b5957;
