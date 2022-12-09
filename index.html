@@ -5,12 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Page</title>
+  <link href='https://fonts.googleapis.com/css?family=Crete Round|Inter|poppings|InaiMathi' rel='stylesheet'>
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="hero.css">
-  <link rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="works.css">
   <link rel="stylesheet" href="about.css">
-  <link href='https://fonts.googleapis.com/css?family=Crete Round|Inter|poppings|InaiMathi' rel='stylesheet'>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="desktop.css">
 </head>
 <body>
   <header>
@@ -26,10 +27,13 @@
   </header>
   <main>
 	<section class="hero">
-	  <h1 class="header">Hey There. I’m Alex</h1>
-	  <span class="sub-header">I’am a Software Developer</span>
-	  <p class="description">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-				don’t hestiate to contact me.</p>
+	  <div class="intro">
+	  	<h1 class="header">Hey There. I’m Alex</h1>
+		  <span class="sub-header">I’am a Software Developer</span>
+		  <p class="description">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+			don’t hestiate to contact me.
+		  </p>
+	  </div>
 	  <ul class="social-icons">
 		<a href="https://github.com/Reggeditt" class="social-link">
 		  <img src="assets/images/githubIcon.png" alt="" class="icon">
@@ -206,6 +210,10 @@
 		  <p class="description">interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
 	  </div>
 	  <form action="https://formspree.io/f/xoqbgdpy" method="post" id="contact-form">
+		<div id="desktop-name-inputs">
+		  <input id="desktop-name-input" type="text" name="first-name" maxlength="30" placeholder="First name" required>
+		  <input id="desktop-name-input" type="text" name="last-name" maxlength="30" placeholder="Last name" required>
+		</div>
  		<input id="name-input" type="text" name="name" maxlength="30" placeholder="Full name" required>
 		<input id="email-input" type="email" name="email" placeholder="Email address" required>
 		<textarea name="comments" id="comments-input" maxlength="500" rows="5" placeholder="Enter text here" required></textarea>
