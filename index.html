@@ -18,10 +18,11 @@
 	<h1 class="header">John Doe</h1>
 	<nav>
 	  <img src="assets/images/menuIcon.png" alt="" class="icon menu-icon">
-	  <div class="nav-links" style="display: none;">
-		<a href="" id="portfolio">Portfolio</a>
-		<a href="" id="about">About</a>
-		<a href="" id="contact">Contact</a>
+	  <div class="nav-links">
+		<a href="#" id="portfolio">Portfolio</a>
+		<a href="#" id="about">About</a>
+		<a href="#" id="contact">Contact</a>
+		<a href="#" id="mail"></a>
 	  </div>
 	</nav>
   </header>
@@ -55,7 +56,7 @@
 	<section class="works">
 	  <div class="works-heading">
 		<h1 class="heading">My Recent Works</h1>
-	  <hr id="works-header-divider">
+	    <div id="works-header-divider"></div>
 	  </div>
 	  <div class="works-img"></div>
 	  <div class="multi-posts">
@@ -73,7 +74,7 @@
 			<button class="multiposts-btn btn">See Project</button>
 	  </div>
 	  <div class="projects">
-		<div class="project-card">
+		<div class="project-card card-one">
 		  <h2 class="pjt-card-header heading">Profesional Art Printing Data</h2>
 		  <p class="pjt-card-sub-header sub-heading">
 				A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
@@ -85,21 +86,7 @@
 			</ul>
 		  <button class="pjt-button btn">See Project</button>
 		</div>
-		<div class="project-card">
-		  <h2 class="pjt-card-header heading">Profesional Art Printing Data</h2>
-		  <p class="pjt-card-sub-header sub-heading">
-				A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-		  </p>
-		  <div >
-			<ul class="stack-list">
-			  <li><a href="#">html</a></li>
-			  <li><a href="#">bootstrap</a></li>
-			  <li><a href="#">Ruby</a></li>
-			</ul>
-		  </div>
-		  <button class="pjt-button btn">See Project</button>
-		</div>
-		<div class="project-card">
+		<div class="project-card card-two">
 		  <h2 class="pjt-card-header heading">Profesional Art Printing Data</h2>
 		  <p class="pjt-card-sub-header sub-heading">
 				A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
@@ -113,7 +100,7 @@
 		  </div>
 		  <button class="pjt-button btn">See Project</button>
 		</div>
-		<div class="project-card">
+		<div class="project-card card-three">
 		  <h2 class="pjt-card-header heading">Profesional Art Printing Data</h2>
 		  <p class="pjt-card-sub-header sub-heading">
 				A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
@@ -127,7 +114,7 @@
 		  </div>
 		  <button class="pjt-button btn">See Project</button>
 		</div>
-		<div class="project-card">
+		<div class="project-card card-four">
 		  <h2 class="pjt-card-header heading">Profesional Art Printing Data</h2>
 		  <p class="pjt-card-sub-header sub-heading">
 				A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
@@ -141,7 +128,21 @@
 		  </div>
 		  <button class="pjt-button btn">See Project</button>
 		</div>
-		<div class="project-card">
+		<div class="project-card card-two">
+		  <h2 class="pjt-card-header heading">Profesional Art Printing Data</h2>
+		  <p class="pjt-card-sub-header sub-heading">
+				A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
+		  </p>
+		  <div >
+			<ul class="stack-list">
+			  <li><a href="#">html</a></li>
+			  <li><a href="#">bootstrap</a></li>
+			  <li><a href="#">Ruby</a></li>
+			</ul>
+		  </div>
+		  <button class="pjt-button btn">See Project</button>
+		</div>
+		<div class="project-card card-three">
 		  <h2 class="pjt-card-header heading">Profesional Art Printing Data</h2>
 		  <p class="pjt-card-sub-header sub-heading">
 				A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
@@ -159,11 +160,13 @@
 	</section>
 	<section class="about">
 		<div class="about-me">
-		  <h1 class="heading abt-header">About me</h1>
-		  <p class="sub-heading abt-sub-header">
-			Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-		  </p>
-		  <button class="multiposts-btn btn">Get My Resume</button>
+          <div class="placement">
+			  <h1 class="heading abt-header">About me</h1>
+			  <p class="sub-heading abt-sub-header">
+				Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+			  </p>
+			  <button class="multiposts-btn btn">Get My Resume</button>
+          </div>
 		</div>
 		<hr>
 		<div class="about-merits">
@@ -179,7 +182,7 @@
 		  </li>
 		  <li>
 			<h3 class="stack two">Frameworks</h3>
-			<div>
+			<div class="test">
 			  <ul class="stack-list-container">
 				<li>bootstrap</li>
 				<li>Ruby on Rails</li>
