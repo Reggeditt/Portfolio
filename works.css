@@ -1,3 +1,4 @@
+
 .works {
   display: grid;
   grid-template-columns: 350px;
@@ -7,10 +8,23 @@
   padding-bottom: 80px;
 }
 
-.works-heading span {
+.heading {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.works-heading .heading {
+  display: inline;
   font-size: 40px;
   padding-bottom: 50px;
   border-bottom: 1px solid black;
+}
+
+#works-header-divider {
+  border: none;
+  border-bottom: 1px solid #212121;
+  margin-left: 5px;
 }
 
 .works-img {
@@ -26,12 +40,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-}
-
-.heading {
-  font-family: 'Crete Round', sans-serif;
-  font-size: 32px;
-  font-weight: 500;
 }
 
 .sub-heading {

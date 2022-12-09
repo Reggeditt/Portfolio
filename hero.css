@@ -1,7 +1,6 @@
 
 .hero {
   background-color: #1c1a19;
-  /* this width makes it unresponsive -> width: 355px; */
   height: 650px;
   display: flex;
   flex-direction: column;
@@ -24,13 +23,6 @@
   font-size: 53px;
   font-weight: 400;
   line-height: 64px;
-  margin: 20px 0 20px 15px;
-}
-
-#works-header-divider {
-  border: none;
-  border-bottom: 1px solid #212121;
-  margin-left: 5px;
 }
 
 .hero .sub-header {

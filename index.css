@@ -46,6 +46,7 @@ nav img {
 
 .nav-links {
   position: absolute;
+  display: none;
 }
 
 main {
@@ -56,40 +57,6 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.hero {
-  background-color: #1c1a19;
-  width: 355px;
-  height: 650px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 20px;
-  background-image: url(assets/images/Illustration.png);
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  background-size: 130px;
-}
-
-.hero * {
-  width: 327px;
-}
-
-.hero .header {
-  color: #ff6b00;
-  font-family: 'Crete Round', sans-serif;
-  font-size: 53px;
-  font-weight: 400;
-  line-height: 64px;
-  margin: 20px 0 20px 15px;
-}
-
-#works-header-divider {
-  border: none;
-  border-bottom: 1px solid #212121;
-  margin-left: 5px;
 }
 
 footer {

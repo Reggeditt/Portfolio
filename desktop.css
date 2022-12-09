@@ -1,24 +1,314 @@
-
 @media (min-width: 768px) {
   body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    position: relative;
   }
 
-  header, 
+  header,
   main,
-  section, 
   footer {
     width: 100%;
     display: flex;
   }
 
-  .hero {
-    background-color: green;
+  header {
+    z-index: 999;
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    justify-content: space-between;
+  }
+
+  header .header {
+    margin: 25px 10% 15px 5%;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  #mail {
+    background-image: url(assets/images/desktop-Mail.png);
+    width: 25px;
+    height: 20px;
+  }
+
+  .hero {
+    background-image: url(assets/images/main-Illustration-header@1x.png);
+    display: flex;
+    background-position: right center;
+    background-size: 300px;
+    flex-direction: row-reverse;
+    gap: 100px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 870px;
+  }
+
+  .intro {
+    flex: 1.5;
+  }
+
+  .hero .header {
+    flex-grow: 3;
+    height: 160px;
+    width: 400px;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 82px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .hero .sub-header {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 44px;
+  }
+
+  .hero .description {
+    font-size: 20px;
+    line-height: 32px;
+    width: 40%;
+  }
+
+  .social-icons {
+    flex-direction: column;
+  }
+
+  .works {
+    margin-top: 900px;
+    box-sizing: border-box;
+    top: 870px;
+    width: 80%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 3fr 3fr 4fr;
+    grid-template-rows: 200px 400px auto auto auto auto;
+    row-gap: 20px;
+  }
+
+  .works-heading,
+  .projects {
+    grid-column: 1 / 5;
+  }
+
+  .works-img {
+    grid-column: 1 / 3;
+    width: 650px;
+    height: 430px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .works-heading {
+    display: flex;
+    gap: 10px;
+  }
+
+  .works-heading .heading {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 82px;
+    text-align: left;
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .works-heading #works-header-divider {
+    width: 550px;
+    border-bottom: 1px solid #212121;
+    align-self: center;
+  }
+
+  .multi-posts .heading {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+  }
+
+  .multi-posts .sub-heading {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    width: 435px;
+  }
+
+  .multi-post-stacks li a {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 15px 0 15px;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 435px);
+    max-width: hug(369px);
+    max-height: hug(435px);
+    height: fit-content;
+    row-gap: 10px;
+    column-gap: 10px;
+  }
+
+  .card-one {
+    background-image: url(assets/images/desktop-card1.png);
+  }
+
+  .card-one h2 p ul {
+    display: none;
+  }
+
+  .card-two {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.7)), url(assets/images/desktop-card2.png);
+  }
+
+  .card-three {
+    background-image: url(assets/images/desktop-card3.png);
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .about-me {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    background-image: url(assets/images/desktop-about-illustration.png);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: center right;
+    width: 80%;
+    margin-left: 200px;
+  }
+
+  .abt-sub-header {
+    display: inline;
+    width: 500px;
+  }
+
+  .placement {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .about-merits {
+    justify-content: center;
+  }
+
+  hr {
+    border-bottom: 1px solid #fff;
+    display: block;
+    width: 100%;
+    margin: 0 20px;
+  }
+
+  .test {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .stacks-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: flex-start;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-height: 400px;
+    max-width: hug(70%);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-header {
+    grid-column: 1 / 2;
+    align-self: start;
+    justify-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 65px;
+  }
+
+  .contact-header p {
+    text-align: left;
+    display: inline;
+    color: #262626;
+  }
+
+  #contact-form {
+    grid-column: 2 / 5;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  #name-input {
+    display: none;
+  }
+
+  #desktop-name-inputs {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 90%;
+  }
+
+  #desktop-name-input {
+    border-bottom: 1px solid #dbd8d7;
+    box-sizing: border-box;
+    width: 48%;
+  }
+
+  #email-input {
+    width: 88.5%;
+    margin-bottom: 0;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+  #comments-input {
+    width: 87%;
+    margin-bottom: 0;
   }
 }
