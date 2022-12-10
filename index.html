@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-	<h1 class="header">John Doe</h1>
+	<div class="nav-header"><h1 class="logo">John Doe</h1></div>
 	<nav>
 	  <img src="assets/images/menuIcon.png" alt="" class="icon menu-icon">
 	  <div class="nav-links">
@@ -23,13 +23,13 @@
   </header>
   <main>
 	<section class="hero">
-	  <div class="intro">
-	  	<h1 class="header">Hey There. I’m Alex</h1>
-		<span class="sub-header">I’am a Software Developer</span>
+	  <!-- <div class="intro"> -->
+	  	<h1 class="hero-header">Hey There. I’m Alex</h1>
+		<span class="hero-sub-header">I’am a Software Developer</span>
 		<p class="description">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
 			don’t hestiate to contact me.
 		</p>
-	  </div>
+	  <!-- </div> -->
 	  <ul class="social-icons">
 		<a href="https://github.com/Reggeditt" class="social-link">
 		  <img src="assets/images/githubIcon.png" alt="" class="icon">
@@ -49,14 +49,14 @@
 	</ul>
 	</section>
 	<section class="works">
-	  <div class="works-heading">
-		<h1 class="heading">My Recent Works</h1>
+	  <div class="works-title">
+		<h1 class="works-header">My Recent Works</h1>
 	    <div id="works-header-divider"></div>
-	  </div>
-	  <div class="works-img"></div>
-	  <div class="multi-posts">
-		<h2 class="heading">Multi-Post Stories</h2>
-		<p class="sub-heading">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard 
+	  </div>	  
+	  <article class="multi-posts">
+		<figure class="works-img"></figure>
+		<h2 class="multi-posts-header">Multi-Post Stories</h2>
+		<p class="multi-posts-sub-header">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard 
 			dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
 		<div >
 			<ul class="stack-list multi-post-stacks">
@@ -67,7 +67,7 @@
 			</ul>
 	    </div>
 			<button class="multiposts-btn btn">See Project</button>
-	  </div>
+	  </article>
 	  <div class="projects">
 		<div class="project-card card-one">
 		  <h2 class="pjt-card-header heading">Profesional Art Printing Data</h2>
@@ -79,7 +79,7 @@
 			  <li><a href="#">bootstrap</a></li>
 			  <li><a href="#">Ruby</a></li>
 			</ul>
-		  <button class="pjt-button btn">See Project</button>
+		  <span class="pjt-button btn">See Project</span>
 		</div>
 		<div class="project-card card-two">
 		  <h2 class="pjt-card-header heading">Profesional Art Printing Data</h2>
@@ -93,7 +93,7 @@
 			  <li><a href="#">Ruby</a></li>
 			</ul>
 		  </div>
-		  <button class="pjt-button btn">See Project</button>
+		  <span class="pjt-button btn">See Project</span>
 		</div>
 		<div class="project-card card-three">
 		  <h2 class="pjt-card-header heading">Profesional Art Printing Data</h2>
@@ -107,7 +107,7 @@
 			  <li><a href="#">Ruby</a></li>
 			</ul>
 		  </div>
-		  <button class="pjt-button btn">See Project</button>
+		  <span class="pjt-button btn">See Project</span>
 		</div>
 		<div class="project-card card-four">
 		  <h2 class="pjt-card-header heading">Profesional Art Printing Data</h2>
@@ -121,7 +121,7 @@
 			  <li><a href="#">Ruby</a></li>
 			</ul>
 		  </div>
-		  <button class="pjt-button btn">See Project</button>
+		  <span class="pjt-button btn">See Project</span>
 		</div>
 		<div class="project-card card-two">
 		  <h2 class="pjt-card-header heading">Profesional Art Printing Data</h2>
@@ -135,7 +135,7 @@
 			  <li><a href="#">Ruby</a></li>
 			</ul>
 		  </div>
-		  <button class="pjt-button btn">See Project</button>
+		  <span class="pjt-button btn">See Project</span>
 		</div>
 		<div class="project-card card-three">
 		  <h2 class="pjt-card-header heading">Profesional Art Printing Data</h2>
@@ -149,21 +149,20 @@
 			  <li><a href="#">Ruby</a></li>
 			</ul>
 		  </div>
-		  <button class="pjt-button btn">See Project</button>
+		  <span class="pjt-button btn">See Project</span>
 		</div>    
 	  </div>
 	</section>
 	<section class="about">
+		<div class="about-background"></div>
 		<div class="about-me">
-          <div class="placement">
-			  <h1 class="heading abt-header">About me</h1>
-			  <p class="sub-heading abt-sub-header">
-				Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-			  </p>
-			  <button class="multiposts-btn btn">Get My Resume</button>
-          </div>
+			<h1 class="abt-header">About me</h1>
+			<p class="abt-sub-header">
+			  Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+			</p>
+			<span class="about-me-btn btn">Get My Resume</span>
 		</div>
-		<hr>
+		<div class="about-divider"></div>
 		<div class="about-merits">
 		  <ul class="stacks-container">
 		  <li>
@@ -203,10 +202,10 @@
 		</div>
 	</section>
 	<section class="contact">
-	  <div class="contact-header">
-	  	<p>I'm always</p>
-		  <p class="description">interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-	  </div>
+	  <p class="form-header">
+	  	<span>I'm always</span>
+		  <span class="description">interested in hearing about new projects, so if you'd like to chat please get in touch.</span>
+	  </p>
 	  <form action="https://formspree.io/f/xoqbgdpy" method="post" id="contact-form">
 		<div id="desktop-name-inputs">
 		  <input id="desktop-name-input" type="text" name="first-name" maxlength="30" placeholder="First name" required>
