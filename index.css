@@ -232,12 +232,10 @@ a {
 }
 
 .stack-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   list-style: none;
   margin-bottom: 10px;
   padding: 0;
+  float: left;
 }
 
 .stack-list li {
