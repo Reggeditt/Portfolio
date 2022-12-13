@@ -500,6 +500,8 @@ input {
   outline: none;
   border: none;
   border-bottom: 1px solid #dbd8d7;
+  font-family: Inter, serif;
+  font-size: 35px;
 }
 
 input::placeholder {
