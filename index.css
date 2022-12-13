@@ -235,7 +235,6 @@ a {
   list-style: none;
   margin-bottom: 10px;
   padding: 0;
-  float: left;
 }
 
 .stack-list li {
@@ -248,6 +247,7 @@ a {
   font-size: 14px;
   font-weight: 500;
   margin: auto 5px;
+  float: left;
 }
 
 .pjt-button {
