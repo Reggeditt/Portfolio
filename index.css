@@ -715,6 +715,8 @@ footer {
 
   .contact {
     flex-direction: row;
+    align-items: flex-start;
+    padding-block-start: 80px;
   }
 
   .form-text p {
