@@ -717,6 +717,12 @@ footer {
     flex-direction: row;
   }
 
+  .form-text p {
+    text-align: left;
+    color: #262626;
+    display: inline;
+  }
+
   /* button states */
   .main-btn:hover {
     background: #fff5e1;
