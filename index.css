@@ -40,6 +40,7 @@
   font-weight: 700;
   background-color: var(--primary-text-color);
   color: var(--text-color-white);
+  text-align: center;
 }
 
 .stack-btn {
@@ -47,14 +48,6 @@
   font-weight: 500;
 }
 
-/* .flex-row {
-  display: flex;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
 /* general rulesets */
 * {
   box-sizing: border-box;
@@ -115,6 +108,10 @@ header {
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
+}
+
+.nav-links {
+  display: none;
 }
 
 main {
@@ -195,7 +192,8 @@ main {
 
 #works-header-divider {
   width: 100%;
-  border-bottom: 1px solid #212121;
+  height: 1px;
+  background-color: #212121;
   margin-block: 30px;
 }
 
@@ -210,8 +208,8 @@ main {
   background-image: url(assets/images/Img-Placeholder.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  max-width: 327px;
+  width: 327px;
+  max-width: 684px;
   min-height: 237px;
 }
 
@@ -562,4 +560,180 @@ footer {
   margin: 0;
   padding: 0;
   gap: 0;
+}
+
+/* media query for desktop view styles start here... */
+@media (min-width: 768px) {
+  /* query for header section */
+  header {
+    height: 72px;
+  }
+
+  .logo {
+    font-family: Inter, serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .nav-links > * {
+    text-decoration: none;
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    color: var(--text-color-white);
+  }
+
+  #mail {
+    background-image: url(assets/images/Icon-Mail.png);
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+  }
+
+  /* hero section styling */
+  .hero {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 50px;
+    height: 798px;
+    background-image: url(assets/images/desktop-Illustration-header.png);
+    background-position: top right;
+    background-size: 40%;
+  }
+
+  .hero .social-icons {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  /* works section styling... */
+  .works {
+    padding: 100px 50px;
+    row-gap: 25px;
+  }
+
+  .works-heading {
+    display: flex;
+  }
+
+  .works-heading .header-text {
+    width: 50%;
+  }
+
+  .works-header-divider {
+    width: 794px;
+    flex: 1;
+  }
+
+  .multi-posts-frame {
+    flex-direction: row;
+  }
+
+  .works-img {
+    width: 684px;
+    height: 448px;
+    flex-grow: 2;
+    flex-basis: 65%;
+  }
+
+  .multi-posts-details {
+    flex-shrink: 15;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 435px 435px;
+  }
+
+  .pjt-button {
+    opacity: 0;
+  }
+
+  .pjt-button:hover {
+    cursor: pointer;
+  }
+
+  .project-card:hover > :not(button) {
+    opacity: 0;
+  }
+
+  .project-card:hover .pjt-button {
+    opacity: 1;
+  }
+
+  .about {
+    height: 1195px;
+  }
+
+  .about .background {
+    background-image: url(assets/images/desktop-illustration-about.svg);
+    background-position: calc(100% - 0.5px) 76px;
+    height: 1195px;
+  }
+
+  .about-me {
+    max-width: 566px;
+    align-self: flex-start;
+    margin-inline: 10%;
+  }
+
+  .about-me .description2-text {
+    color: var(--text-color-white);
+    line-height: 32px;
+    font-size: 20px;
+  }
+
+  .about-skills .stacks-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .stack-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-block-start: 80px;
+  }
+
+  .form-text p {
+    text-align: left;
+    color: #262626;
+    display: inline;
+  }
+
+  /* button states */
+  .main-btn:hover {
+    background: #fff5e1;
+    border: 1px solid #f55800;
+    color: #f55800;
+  }
+
+  .main-btn:focus {
+    background: #e05304;
+    color: #f4f1f0;
+  }
 }
