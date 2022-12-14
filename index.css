@@ -40,6 +40,7 @@
   font-weight: 700;
   background-color: var(--primary-text-color);
   color: var(--text-color-white);
+  text-align: center;
 }
 
 .stack-btn {
@@ -199,7 +200,8 @@ main {
 
 #works-header-divider {
   width: 100%;
-  border-bottom: 1px solid #212121;
+  height: 1px;
+  background-color: #212121;
   margin-block: 30px;
 }
 
@@ -629,6 +631,7 @@ footer {
   /* works section styling... */
   .works {
     padding: 100px 50px;
+    row-gap: 25px;
   }
 
   .works-heading {
@@ -665,13 +668,72 @@ footer {
     grid-template-rows: 435px 435px;
   }
 
+  .pjt-button {
+    opacity: 0;
+  }
+
+  .pjt-button:hover {
+    cursor: pointer;
+  }
+
+  .project-card:hover > :not(button) {
+    opacity: 0;
+  }
+
+  .project-card:hover .pjt-button {
+    opacity: 1;
+  }
+
+  .about {
+    height: 1195px;
+  }
+
   .about .background {
     background-image: url(assets/images/desktop-illustration-about.svg);
+    background-position: calc(100% - 0.5px) 76px;
+    height: 1195px;
   }
 
   .about-me {
     max-width: 566px;
     align-self: flex-start;
     margin-inline: 10%;
+  }
+
+  .about-me .description2-text {
+    color: var(--text-color-white);
+    line-height: 32px;
+    font-size: 20px;
+  }
+
+  .about-skills .stacks-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .stack-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact {
+    flex-direction: row;
+  }
+
+  /* button states */
+  .main-btn:hover {
+    background: #fff5e1;
+    border: 1px solid #f55800;
+    color: #f55800;
+  }
+
+  .main-btn:focus {
+    background: #e05304;
+    color: #f4f1f0;
   }
 }
