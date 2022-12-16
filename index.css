@@ -41,6 +41,7 @@
   background-color: var(--primary-text-color);
   color: var(--text-color-white);
   text-align: center;
+  transition: color 1000ms, background-color 1000ms;
 }
 
 .stack-btn {
