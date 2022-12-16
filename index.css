@@ -286,8 +286,12 @@ main {
   justify-content: center;
   padding-inline: 17px;
   gap: 20px;
+  transition: scale 250ms;
 }
 
+.project-card:hover {
+  scale: 0.9;
+}
 .project-card .header-text {
   font-size: 32px;
   line-height: 44px;
