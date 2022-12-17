@@ -292,6 +292,7 @@ main {
 .project-card:hover {
   scale: 0.9;
 }
+
 .project-card .header-text {
   font-size: 32px;
   line-height: 44px;
@@ -728,6 +729,13 @@ footer {
     text-align: left;
     color: #262626;
     display: inline;
+  }
+
+  .form-text {
+    transition: translate 350ms;
+  }
+  .form-text:hover {
+    translate: 10px;
   }
 
   /* button states */
