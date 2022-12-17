@@ -111,6 +111,14 @@ header {
   text-align: left;
 }
 
+.logo {
+  Transition: rotate 1000ms;
+}
+
+.logo:hover {
+  Rotate: -360deg;
+}
+
 .nav-links {
   display: none;
 }
