@@ -62,19 +62,13 @@ LIVE DEMO
 - Twitter: [@twitterhandle](https://twitter.com/tksarso)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/tetteh-kodjo-sarso-888989125)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Desktop version]**
+- [ ] **[Animations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
