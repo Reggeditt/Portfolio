@@ -109,14 +109,11 @@ header {
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
-}
-
-.logo {
-  Transition: rotate 1000ms;
+  transition: rotate 1000ms;
 }
 
 .logo:hover {
-  Rotate: -360deg;
+  rotate: -360deg;
 }
 
 .nav-links {
@@ -742,6 +739,7 @@ footer {
   .form-text {
     transition: translate 350ms;
   }
+
   .form-text:hover {
     translate: 10px;
   }
