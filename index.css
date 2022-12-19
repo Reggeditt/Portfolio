@@ -41,6 +41,7 @@
   background-color: var(--primary-text-color);
   color: var(--text-color-white);
   text-align: center;
+  transition: color 1000ms, background-color 1000ms;
 }
 
 .stack-btn {
@@ -108,6 +109,11 @@ header {
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
+  transition: rotate 1000ms;
+}
+
+.logo:hover {
+  rotate: -360deg;
 }
 
 .nav-links {
@@ -285,6 +291,11 @@ main {
   justify-content: center;
   padding-inline: 17px;
   gap: 20px;
+  transition: scale 250ms;
+}
+
+.project-card:hover {
+  scale: 0.9;
 }
 
 .project-card .header-text {
@@ -723,6 +734,14 @@ footer {
     text-align: left;
     color: #262626;
     display: inline;
+  }
+
+  .form-text {
+    transition: translate 350ms;
+  }
+
+  .form-text:hover {
+    translate: 10px;
   }
 
   /* button states */
