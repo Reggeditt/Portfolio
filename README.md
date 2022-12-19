@@ -48,7 +48,7 @@ LIVE DEMO
 
 > Add a link to your deployed project.
 
-- [Live Demo Link]()
+- [View Live Site](https://reggeditt.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
