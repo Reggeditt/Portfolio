@@ -25,7 +25,15 @@
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+## Learning objectives
+
+- We use basic JavaScript syntax.
+- We use JavaScript to manipulate DOM elements.
+- We use JavaScript events.
+
+## Description
+
+For this milestone of My portfolio website, I will implement the mobile menu using my recently acquired JavaScript knowledge.
 
 **[Portfolio]** is an online portfolio website that shows all the projects I've worked on within a period of time.
 
@@ -61,6 +69,13 @@ LIVE DEMO
 - GitHub: [@githubhandle](https://github.com/reggeddit)
 - Twitter: [@twitterhandle](https://twitter.com/tksarso)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **CansueT**
+
+- GitHub: [@githubhandle](https://github.com/JansueT)
+- instagram: [@cansuetas](https://instagram.com/cansuetas)
+- twitter: [@cansu8tas](https://twitter.com/cansu8tas)
+- linkedIn: [@LinkedIn](https://www.linkedin.com/in/cansu-tas-467844251/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
