@@ -80,7 +80,6 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: fit-content;
 }
 
 header {
@@ -142,7 +141,7 @@ nav {
   background-color: var(--text-color-8);
 }
 
-.nav-links a{
+.nav-links a {
   text-decoration: none;
   font-family: Inter, sans-serif;
   font-size: 32px;
@@ -151,13 +150,13 @@ nav {
   letter-spacing: 0;
   text-align: center;
   color: var(--text-color-white);
-  /* margin-top: 33px; */
 }
 
 .nav-links-divider {
   border-bottom: 1px solid #6f6c6b;
   width: 100%;
 }
+
 main {
   overflow: auto;
   width: 100%;
@@ -635,11 +634,10 @@ footer {
     justify-content: space-between;
     gap: 20px;
     height: 100%;
-    background-color: white;
-    
+    background-color: #3c3a49;
   }
 
-  .nav-links a{
+  .nav-links a {
     text-decoration: none;
     font-family: Inter, sans-serif;
     font-size: 15px;
