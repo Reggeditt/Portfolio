@@ -624,7 +624,9 @@ footer {
     line-height: 20px;
   }
 
-  .menu-icon,  #close-menu-icon, .nav-links-divider {
+  .menu-icon,
+  #close-menu-icon,
+  .nav-links-divider {
     display: none;
   }
 
