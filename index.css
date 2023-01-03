@@ -624,17 +624,15 @@ footer {
     line-height: 20px;
   }
 
-  .menu-icon {
+  .menu-icon,  #close-menu-icon, .nav-links-divider {
     display: none;
   }
 
   .nav-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     gap: 20px;
-    height: 100%;
-    background-color: #3c3a49;
   }
 
   .nav-links a {
