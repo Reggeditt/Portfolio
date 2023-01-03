@@ -1,272 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">  
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Page</title>
-  <link rel="stylesheet" href="index.css">
-  <link href='https://fonts.googleapis.com/css?family=Crete Round|Inter|Roboto|Poppins|InaiMathi' rel='stylesheet'>
-</head>
-<body>
-  <header>
-    <div class="header-container">
-		<div class="logo-container">
-				<h1 class="logo">Tk_Sarso.</h1>
-			</div>
-		<nav>
-		  <img src="assets/images/menuIcon.png" alt="" class="icon menu-icon">
-		  <div class="nav-links">
-			<a href="" id="portfolio">Portfolio</a>
-			<a href="" id="about">About</a>
-			<a href="" id="contact">Contact</a>
-			<a href="" id="mail"></a>
-		  </div>
-		</nav>
-	</div>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="hero-text-container">
-		<h1 class="header-text">Hey There. I’m Tetteh</h1>
-		<span class="sub-header-text">I’am a Software Developer</span>
-		<p class="description1-text">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded,
-				  don’t hestiate to contact me.</p>
-	  </div>
-      <ul class="social-icons">
-        <li>
-        	<a href="https://github.com/Reggeditt" class="social-link">
-	          <img src="assets/images/githubIcon.png" alt="" class="icon">
-	        </a>
-        </li>
-        <li>
-        	<a href="https://www.linkedin.com/in/tetteh-kodjo-sarso-888989125/" class="social-link">
-	          <img src="assets/images/linkedin.png" alt="" class="icon">
-	        </a>
-        </li>
-        <li>
-        	<a href="#" class="social-link">
-	          <img src="assets/images/angelist.png" alt="" class="icon">
-	        </a>
-        </li>                
-        <li>
-        	<a href="https://twitter.com/tksarso" class="social-link">
-	          <img src="assets/images/twitterIcon.png" alt="" class="icon">
-	        </a>
-        </li>
-        <li>
-        	<a href="#" class="social-link">
-	          <img src="assets/images/Vector.png" alt="" class="icon">
-	        </a>
-        </li>
-      </ul>
-    </section>
-    <section class="works">
-      <div class="works-heading">
-        <h1 class="header-text">My Recent Works</h1>
-	    <div id="works-header-divider"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Crete Round|Inter|Roboto|Poppins|InaiMathi"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="logo-container" id="logo">
+          <h1 class="logo">Tk_Sarso.</h1>
+        </div>
+        <nav id="nav">
+          <img
+            src="assets/images/menuIcon.png"
+            id="menu-icon"
+            alt=""
+            class="icon menu-icon"
+          />
+          <div class="nav-links" id="menu">
+            <img
+              src="assets/images/menu-close-Icon.png"
+              id="close-menu-icon"
+              alt="close menu icon"
+            />
+            <a href="#hero" id="menu-link-portfolio">Portfolio</a>
+            <div class="nav-links-divider"></div>
+            <a href="#about" id="menu-link-about">About</a>
+            <div class="nav-links-divider"></div>
+            <a href="#contact" id="menu-link-contact">Contact</a>
+            <div class="nav-links-divider"></div>
+            <a href="" id="mail"></a>
+          </div>
+        </nav>
       </div>
-      <div class="multi-posts-frame">
-        <div class="works-img"></div>    
-		<div class="multi-posts-details">
-			<h2 class="header-text">Multi-Post Stories</h2>
-			<p class="description2-text">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-					dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-				<div class="stack-list-container">
-					<ul class="stack-list">
-						<li><a href="#">css</a></li>
-						<li><a href="#">html</a></li>
-						<li><a href="#">bootstrap</a></li>
-						<li><a href="#">Ruby</a></li>
-					</ul>
-				</div>
-				<a href="#" class="multiposts-btn main-btn">See Project</a>
-				  </div>
-		</div>
-      <div class="projects">
-        <div class="project-card">
-		  <h2 class="header-text">Profesional Art Printing Data</h2>
-          <p class="description2-text">
-				A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-		  </p>
-		  <div >
-			<ul class="stack-list">
-		      <li><a href="#">html</a></li>
-			  <li><a href="#">bootstrap</a></li>
-			  <li><a href="#">Ruby</a></li>
-			</ul>
-		  </div>
-		  <button class="pjt-button main-btn">See Project</button>
-		</div>
-        <div class="project-card">
-		  <h2 class="header-text">Profesional Art Printing Data</h2>
-          <p class="description2-text">
-				A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-		  </p>
-		  <div >
-			<ul class="stack-list">
-		      <li><a href="#">html</a></li>
-			  <li><a href="#">bootstrap</a></li>
-			  <li><a href="#">Ruby</a></li>
-			</ul>
-		  </div>
-		  <a href="#" class="pjt-button main-btn">See Project</a>
-		</div>
-        <div class="project-card">
-		  <h2 class="header-text">Profesional Art Printing Data</h2>
-          <p class="description2-text">
-				A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-		  </p>
-		  <div >
-			<ul class="stack-list">
-		      <li><a href="#">html</a></li>
-			  <li><a href="#">bootstrap</a></li>
-			  <li><a href="#">Ruby</a></li>
-			</ul>
-		  </div>
-		  <a href="#" class="pjt-button main-btn">See Project</a>
-		</div>
-        <div class="project-card">
-		  <h2 class="header-text">Profesional Art Printing Data</h2>
-          <p class="description2-text">
-				A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-		  </p>
-		  <div >
-			<ul class="stack-list">
-		      <li><a href="#">html</a></li>
-			  <li><a href="#">bootstrap</a></li>
-			  <li><a href="#">Ruby</a></li>
-			</ul>
-		  </div>
-		  <a href="#" class="pjt-button main-btn">See Project</a>
-		</div>
-        <div class="project-card">
-		  <h2 class="header-text">Profesional Art Printing Data</h2>
-          <p class="description2-text">
-				A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-		  </p>
-		  <div >
-			<ul class="stack-list">
-		      <li><a href="#">html</a></li>
-			  <li><a href="#">bootstrap</a></li>
-			  <li><a href="#">Ruby</a></li>
-			</ul>
-		  </div>
-		  <a href="#" class="pjt-button main-btn">See Project</a>
-		</div>
-        <div class="project-card">
-		  <h2 class="header-text">Profesional Art Printing Data</h2>
-          <p class="description2-text">
-				A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard
-		  </p>
-		  <div >
-			<ul class="stack-list">
-		      <li><a href="#">html</a></li>
-			  <li><a href="#">bootstrap</a></li>
-			  <li><a href="#">Ruby</a></li>
-			</ul>
-		  </div>
-		  <a href="#" class="pjt-button main-btn">See Project</a>
-		</div>
-            
-      </div>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-text-container">
+          <h1 class="header-text">Hey There. I’m Tetteh</h1>
+          <span class="sub-header-text">I’m a Software Developer</span>
+          <p class="description1-text">
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+        </div>
+        <ul class="social-icons">
+          <li>
+            <a href="https://github.com/Reggeditt" class="social-link">
+              <img src="assets/images/githubIcon.png" alt="" class="icon" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/tetteh-kodjo-sarso-888989125/"
+              class="social-link"
+            >
+              <img src="assets/images/linkedin.png" alt="" class="icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <img src="assets/images/angelist.png" alt="" class="icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/tksarso" class="social-link">
+              <img src="assets/images/twitterIcon.png" alt="" class="icon" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <img src="assets/images/Vector.png" alt="" class="icon" />
+            </a>
+          </li>
+        </ul>
       </section>
-      <section class="about">
-		<div class="background"></div>
+      <section class="works">
+        <div class="works-heading">
+          <h1 class="header-text">My Recent Works</h1>
+          <div id="works-header-divider"></div>
+        </div>
+        <div class="multi-posts-frame">
+          <div class="works-img"></div>
+          <div class="multi-posts-details">
+            <h2 class="header-text">Multi-Post Stories</h2>
+            <p class="description2-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a standard
+              dummy text.
+            </p>
+            <div class="stack-list-container">
+              <ul class="stack-list">
+                <li><a href="#">css</a></li>
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
+            <a href="#" class="multiposts-btn main-btn">See Project</a>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="project-card">
+            <h2 class="header-text">Profesional Art Printing Data</h2>
+            <p class="description2-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div>
+              <ul class="stack-list">
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
+            <button class="pjt-button main-btn">See Project</button>
+          </div>
+          <div class="project-card">
+            <h2 class="header-text">Profesional Art Printing Data</h2>
+            <p class="description2-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div>
+              <ul class="stack-list">
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
+            <a href="#" class="pjt-button main-btn">See Project</a>
+          </div>
+          <div class="project-card">
+            <h2 class="header-text">Profesional Art Printing Data</h2>
+            <p class="description2-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div>
+              <ul class="stack-list">
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
+            <a href="#" class="pjt-button main-btn">See Project</a>
+          </div>
+          <div class="project-card">
+            <h2 class="header-text">Profesional Art Printing Data</h2>
+            <p class="description2-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div>
+              <ul class="stack-list">
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
+            <a href="#" class="pjt-button main-btn">See Project</a>
+          </div>
+          <div class="project-card">
+            <h2 class="header-text">Profesional Art Printing Data</h2>
+            <p class="description2-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div>
+              <ul class="stack-list">
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
+            <a href="#" class="pjt-button main-btn">See Project</a>
+          </div>
+          <div class="project-card">
+            <h2 class="header-text">Profesional Art Printing Data</h2>
+            <p class="description2-text">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. has been the industry's standard
+            </p>
+            <div>
+              <ul class="stack-list">
+                <li><a href="#">html</a></li>
+                <li><a href="#">bootstrap</a></li>
+                <li><a href="#">Ruby</a></li>
+              </ul>
+            </div>
+            <a href="#" class="pjt-button main-btn">See Project</a>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div class="background"></div>
         <div class="about-me">
-		  <h1 class="header-text">About me</h1>
-		  <p class="description2-text">
-			Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-		  </p>
-		  <a href="#" class="about-me-btn main-btn">Get My Resume</a>
-		</div>
-		<div class="about-section-divider"></div>
-		<div class="about-skills">
-		  <ul class="stacks-container">
-		  <li class="stack one">
-			<h1>Languages</h1>
-		    <ul class="stack-list-container">
-			  <li>Javascript</li>
-			  <li>Ruby</li>
-			  <li>Html</li>
-			  <li>Css</li>
-			</ul>	
-		  </li>
-		  <li class="stack two">
-			<h1>Frameworks</h1>
-			<div>
-		      <ul class="stack-list-container">
-				<li>bootstrap</li>
-				<li>Ruby on Rails</li>
-				<li>RSPec</li>
-				<li>CapyBara</li>
-				<li>Selenium</li>
-			  </ul>
-			</div> 
-		  </li>
-		  <li class="stack three">
-			<h1>Skills</h1>
-			<div>
-			  <ul class="stack-list-container">
-				<li>Codekit</li>
-				<li>github</li>
-				<li>Codepen</li>
-				<li>Gitlab</li>
-				<li>Terminal</li>
-			  </ul>	
-			</div> 
-			</li>
-		  </ul>
-		</div>
+          <h1 class="header-text">About me</h1>
+          <p class="description2-text">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+          <a href="#" class="about-me-btn main-btn">Get My Resume</a>
+        </div>
+        <div class="about-section-divider"></div>
+        <div class="about-skills">
+          <ul class="stacks-container">
+            <li class="stack one">
+              <h1>Languages</h1>
+              <ul class="stack-list-container">
+                <li>Javascript</li>
+                <li>Ruby</li>
+                <li>Html</li>
+                <li>Css</li>
+              </ul>
+            </li>
+            <li class="stack two">
+              <h1>Frameworks</h1>
+              <div>
+                <ul class="stack-list-container">
+                  <li>bootstrap</li>
+                  <li>Ruby on Rails</li>
+                  <li>RSPec</li>
+                  <li>CapyBara</li>
+                  <li>Selenium</li>
+                </ul>
+              </div>
+            </li>
+            <li class="stack three">
+              <h1>Skills</h1>
+              <div>
+                <ul class="stack-list-container">
+                  <li>Codekit</li>
+                  <li>github</li>
+                  <li>Codepen</li>
+                  <li>Gitlab</li>
+                  <li>Terminal</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section class="contact">
-		<div class="form-header">
-			<div class="form-text">
-				<p>I'm always </p><p>interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
-			</div>
-		</div>
-		<div class="contact-form">
-			<form action="https://formspree.io/f/xoqbgdpy">
-				<div class="desktop-name">
-					<input type="text" maxlength="30" name="name" placeholder="first name" required>
-					<input type="text" maxlength="30" name="name" placeholder="last name" required>
-				</div>
-				<input type="name" maxlength="30" name="name" placeholder="Full name" required>
-				<input type="email" maxlength="30" name="email" placeholder="Email" required>
-				<textarea name="comments" id="comment-box" cols="10" rows="5" maxlength="500" placeholder="Enter text here"></textarea>
-				<button type="submit" id="contact-btn" class="main-btn">Get in touch</button>
-			</form>
-		</div>
-	  </section>
+      <section class="contact" id="contact">
+        <div class="form-header">
+          <div class="form-text">
+            <p>I'm always</p>
+            <p>
+              interested in hearing about new projects, so if you'd like to chat
+              please get in touch.
+            </p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xoqbgdpy">
+            <div class="desktop-name">
+              <input
+                type="text"
+                maxlength="30"
+                name="name"
+                placeholder="first name"
+                required
+              />
+              <input
+                type="text"
+                maxlength="30"
+                name="name"
+                placeholder="last name"
+                required
+              />
+            </div>
+            <input
+              type="name"
+              maxlength="30"
+              name="name"
+              placeholder="Full name"
+              required
+            />
+            <input
+              type="email"
+              maxlength="30"
+              name="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              name="comments"
+              id="comment-box"
+              cols="10"
+              rows="5"
+              maxlength="500"
+              placeholder="Enter text here"
+            ></textarea>
+            <button type="submit" id="contact-btn" class="main-btn">
+              Get in touch
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer>
-		<ul class="footer-icons social-icons">
-			<li>
-				<a href="https://github.com/Reggeditt" class="social-link">
-				  <img src="assets/images/footer-github.png" alt="" class="icon">
-				</a>
-			</li>
-			<li>
-				<a href="https://www.linkedin.com/in/tetteh-kodjo-sarso-888989125/" class="social-link">
-					<img src="assets/images/footer-linkedin.png" alt="" class="icon">
-				</a>
-			</li>
-			<li>
-				<a href="#" class="social-link">
-					<img src="assets/images/footer-angelist.png" alt="" class="icon">
-				</a>
-			</li>                
-			<li>
-				<a href="https://twitter.com/tksarso" class="social-link">
-					<img src="assets/images/footer-twitter.png" alt="" class="icon">
-				</a>
-			</li>
-			<li>
-				<a href="#" class="social-link">
-					<img src="assets/images/footer-medium.png" alt="" class="icon">
-				</a>
-			</li>
-			</ul>
-	</footer>
-</body>
+      <ul class="footer-icons social-icons">
+        <li>
+          <a href="https://github.com/Reggeditt" class="social-link">
+            <img src="assets/images/footer-github.png" alt="" class="icon" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/tetteh-kodjo-sarso-888989125/"
+            class="social-link"
+          >
+            <img src="assets/images/footer-linkedin.png" alt="" class="icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link">
+            <img src="assets/images/footer-angelist.png" alt="" class="icon" />
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/tksarso" class="social-link">
+            <img src="assets/images/footer-twitter.png" alt="" class="icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-link">
+            <img src="assets/images/footer-medium.png" alt="" class="icon" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
