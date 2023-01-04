@@ -395,15 +395,20 @@ main {
   font-family: roboto, serif;
   font-weight: 400;
   color: white;*/
-} */
+  font-size: 50px;
+} 
 
 .modal-stacks {
-  display: none;
+  /* display: none; */
+  box-sizing: content-box;
   color: var(--text-color-8);
   background-color: white;
   border: 1px solid #979493;
-  width: 55px;
-  height: 36px;
+  padding: 5px;
+  width: 250px;
+  height: 156px;
+  margin-inline-end: 20px;
+  margin-block: 20px;
   font-size: 15px;
   line-height: 20px;
   background-color: rgba(255, 255, 255, 0.24);
@@ -420,6 +425,7 @@ main {
 .modal-description {
   font-size: 16px;
   line-height: 24px;
+  padding-block: 20px;
 }
 
 .project-modal-container .main-btn {
