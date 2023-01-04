@@ -368,6 +368,63 @@ main {
   border: none;
 }
 
+.show-modal {
+  display: block;
+}
+
+.project-modal-container {
+  display: none;
+  min-width: 343px;
+  min-height: 718px;
+  /* background-color: black; */
+  /* display: grid;
+  grid-template-areas: "header" 
+                       "stack stack stack" 
+                       "image" 
+                       "description" 
+                       "button button";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30px 40px 300px 400px 50px;
+  row-gap: 20px;
+  column-gap: 10px; */
+}
+
+ .modal-heading {
+  /* grid-area: header; 
+  font-size: 32px;
+  font-family: roboto, serif;
+  font-weight: 400;
+  color: white;*/
+} */
+
+.modal-stacks {
+  /* grid-area: stack; */
+  color: var(--text-color-white);
+  font-size: 15px;
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.illustration {
+  min-width: 90%;
+  height: 220px;
+  background-image: url(assets/images/modal-illustration.png);
+  background-position: center;
+  background-size: cover;
+  /* grid-area: image; */
+}
+
+.modal-description {
+  /* grid-area: description; */
+}
+
+.project-modal-container .main-btn {
+  /* grid-area: button; */
+  font-size: 15px;
+  height: 20px;
+  margin-inline: 30px;
+}
+
 /* about section styles start here... */
 .about {
   height: 1730px;
