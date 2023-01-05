@@ -48,7 +48,7 @@ for (let i = 0; i < projectButtonElements.length; i++) {
       popupButton2];
 
     // Set the innerHTML of each child element
-    modalChildElements[0].innerHTML = 'Project Name';
+    modalChildElements[0].innerHTML = `Project ${i + 1}`;
     modalChildElements[2].innerHTML = 'Html';
     modalChildElements[3].innerHTML = 'Bootstrap';
     modalChildElements[4].innerHTML = 'Ruby on rails';
