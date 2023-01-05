@@ -70,6 +70,7 @@ const projectButtonElements = document.getElementsByClassName('pjt-button');
 const projectModalContentElements = document.getElementsByClassName('project-modal-content');
 const modalContainerElement = document.getElementById('modal-container');
 const closeModalIconElement = document.getElementById('close-modal-icon');
+const bodyElement = document.getElementById('body');
 
 const popupProjectName = document.createElement('h2');
 popupProjectName.className = 'modal-heading header-text';
@@ -122,6 +123,7 @@ for (let i = 0; i < projectButtonElements.length; i += 1) {
       }
     }
     modalContainerElement.style.display = 'block';
+    bodyElement.style.overflow = 'hidden';
   });
 
   closeModalIconElement.addEventListener('click', () => {
