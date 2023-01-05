@@ -368,25 +368,33 @@ main {
   border: none;
 }
 
-.show-modal {
-  display: block;
-}
+/* .show-modal {
+  display: flex;
+
+} */
 
 .project-modal-container {
   display: none;
-  min-width: 343px;
-  min-height: 718px;
-  /* background-color: black; */
-  /* display: grid;
-  grid-template-areas: "header" 
-                       "stack stack stack" 
-                       "image" 
-                       "description" 
-                       "button button";
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 30px 40px 300px 400px 50px;
-  row-gap: 20px;
-  column-gap: 10px; */
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  padding-top: 200px;
+  top: 0;
+  left: 0;
+}
+
+.project-modal-content {
+  background-color: white;
+  position: relative;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
  .modal-heading {
@@ -396,6 +404,7 @@ main {
   font-weight: 400;
   color: white;*/
   font-size: 50px;
+  padding-bottom: 40px;
 } 
 
 .modal-stacks {
@@ -412,6 +421,11 @@ main {
   font-size: 15px;
   line-height: 20px;
   background-color: rgba(255, 255, 255, 0.24);
+}
+
+.divide {
+  width: 100%;
+  margin-block: 20px;
 }
 
 .illustration {
