@@ -410,8 +410,8 @@ main {
 
 #close-modal-icon {
   position: absolute;
-  top: calc(10%);
-  right: calc(10%);
+  top: 10px;
+  right: 10px;
 }
 .modal-stacks {
   /* display: none; */
@@ -449,10 +449,26 @@ main {
 }
 
 .project-modal-container .main-btn {
-  /* grid-area: button; */
+  padding-inline-start: 15px;
+  padding-inline-end: 25px;
+  padding-block: 10px;
   font-size: 15px;
   height: 20px;
-  margin-inline: 30px;
+  margin-inline: 10px;
+}
+
+.see-live {
+  background-image: url(assets/images/see-live-icon.png);
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+.see-source {
+  background-image: url(assets/images/see-source-icon.png);
+  /* background-size: contain; */
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
 /* about section styles start here... */
@@ -811,6 +827,47 @@ footer {
   .project-card:hover .pjt-button {
     opacity: 1;
   }
+
+  .illustration {
+    max-width: 49%;
+    display: inline-block;
+    /* max-height: 220px; */
+    /* background-image: url(assets/images/modal-illustration.png); */
+    /* background-position: center; */
+    /* background-size: cover; */
+  }
+  
+  .modal-description {
+    max-width: 49%;
+    font-size: 16px;
+    line-height: 24px;
+    padding-inline-start: 20px;
+    display: inline-block;
+    position: relative;
+    bottom: 100px;
+  }
+
+  .see-live {
+    position: relative;
+    left: 50%;
+    bottom: 50px;
+    width: 250px;
+    padding-inline-start: 15px;
+    padding-inline-end: 25px;
+    padding-block: 10px;
+    margin: 0;
+  }
+  
+  .see-source{
+    position: relative;
+    left: 55%;
+    bottom: 50px;
+    width: 200px;
+    padding-inline-start: 15px;
+    padding-inline-end: 25px;
+    padding-block: 10px;
+  }    
+
 
   .about {
     height: 1195px;
