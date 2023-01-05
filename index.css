@@ -394,30 +394,24 @@ main {
   padding-inline: 15px;
   border: 1px solid #888;
   width: 80%;
-  height: fit-content;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  max-height: 750px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
- .modal-heading {
-  /* grid-area: header; 
-  font-size: 32px;
-  font-family: roboto, serif;
-  font-weight: 400;
-  color: white;*/
+.modal-heading {
   font-size: 50px;
   padding-bottom: 40px;
-} 
+}
 
 #close-modal-icon {
   position: absolute;
   top: 10px;
   right: 10px;
 }
+
 .modal-stacks {
-  /* display: none; */
   box-sizing: content-box;
   color: var(--text-color-8);
-  background-color: white;
   border: 1px solid #979493;
   padding: 5px;
   width: 250px;
@@ -459,14 +453,12 @@ main {
 
 .see-live {
   background-image: url(assets/images/see-live-icon.png);
-  /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: center right;
 }
 
 .see-source {
   background-image: url(assets/images/see-source-icon.png);
-  /* background-size: contain; */
   background-repeat: no-repeat;
   background-position: center right;
 }
@@ -727,7 +719,9 @@ footer {
     line-height: 20px;
   }
 
-  .menu-icon,  #close-menu-icon, .nav-links-divider {
+  .menu-icon,
+  #close-menu-icon,
+  .nav-links-divider {
     display: none;
   }
 
@@ -831,12 +825,8 @@ footer {
   .illustration {
     max-width: 49%;
     display: inline-block;
-    /* max-height: 220px; */
-    /* background-image: url(assets/images/modal-illustration.png); */
-    /* background-position: center; */
-    /* background-size: cover; */
   }
-  
+
   .modal-description {
     max-width: 49%;
     font-size: 16px;
@@ -857,8 +847,8 @@ footer {
     padding-block: 10px;
     margin: 0;
   }
-  
-  .see-source{
+
+  .see-source {
     position: relative;
     left: 55%;
     bottom: 50px;
@@ -866,8 +856,7 @@ footer {
     padding-inline-start: 15px;
     padding-inline-end: 25px;
     padding-block: 10px;
-  }    
-
+  }
 
   .about {
     height: 1195px;
