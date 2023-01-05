@@ -92,7 +92,7 @@ const popupButton2 = document.createElement('a');
 popupButton2.className = 'main-btn see-source';
 popupButton2.href = 'https://github.com/Reggeditt/Portfolio/';
 
-for (let i = 0; i < projectButtonElements.length; i++) {
+for (let i = 0; i < projectButtonElements.length; i += 1) {
   projectButtonElements[i].addEventListener('click', () => {
     const modalChildElements = [
       popupProjectName,
@@ -116,8 +116,8 @@ for (let i = 0; i < projectButtonElements.length; i++) {
     modalChildElements[8].innerHTML = 'See live';
     modalChildElements[9].innerHTML = 'see source';
 
-    for (let i = 0; i < projectModalContentElements.length; i++) {
-      for (let j = 0; j < modalChildElements.length; j++) {
+    for (let i = 0; i < projectModalContentElements.length; i += 1) {
+      for (let j = 0; j < modalChildElements.length; j += 1) {
         projectModalContentElements[0].appendChild(modalChildElements[j].cloneNode(true));
       }
     }
@@ -126,13 +126,13 @@ for (let i = 0; i < projectButtonElements.length; i++) {
 
   closeModalIconElement.addEventListener('click', () => {
     modalContainerElement.style.display = 'none';
-    location.reload();
+    window.location.reload();
   });
 
-  window.onclick = function(event) {
-    if (event.target == modalContainerElement) {
+  window.onclick = (event) => {
+    if (event.target === modalContainerElement) {
       modalContainerElement.style.display = 'none';
-      location.reload();
+      window.location.reload();
     }
   };
 }
