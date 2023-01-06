@@ -67,3 +67,19 @@ const menuLinkContactElement = document.getElementById('menu-link-contact');
     }
   });
 
+//----------------------- contact validation ---------------------------------
+const formElement = document.getElementById('contact-form');
+const formNameElement = document.getElementById('name');
+const formEmailElement = document.getElementById('email');
+
+formElement.addEventListener('submit', (event) => {
+  const email = formEmailElement.value;
+  let errmessages = []; 
+  if (email.toLowerCase()!== email) {
+    event.preventDefault();
+    errmessages.push('email must all be in lowercase letters. form was not submitted');
+    const emailErrElement = document.getElementById('email-err');
+    emailErrElement.innerText = errmessages[0]
+  }
+
+});

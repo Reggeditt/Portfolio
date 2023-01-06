@@ -548,7 +548,7 @@ input {
   border: none;
   border-bottom: 1px solid #dbd8d7;
   font-family: Inter, serif;
-  font-size: 35px;
+  font-size: 15px;
 }
 
 input::placeholder {
@@ -561,6 +561,15 @@ input::placeholder {
   text-align: left;
   color: var(--text-color-7);
 }
+
+/* #email-err {
+  color: red;
+  background-image: url(assets/images/asterisk-icon.svg);
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding-inline-start: 30px;
+  font-family: inter, serif;
+} */
 
 textarea {
   border: none;
