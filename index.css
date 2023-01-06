@@ -1,4 +1,3 @@
-
 :root {
   --bg-header-color: #3c3a39;
   --bg-hero-color: #1c1a19;
@@ -16,7 +15,7 @@
 
 /* utility classes */
 .header-text {
-  font-family: 'Crete Round', sans-serif;
+  font-family: "Crete Round", sans-serif;
   font-weight: 400;
 }
 
@@ -562,14 +561,14 @@ input::placeholder {
   color: var(--text-color-7);
 }
 
-/* #email-err {
+#email-err {
   color: red;
   background-image: url(assets/images/asterisk-icon.svg);
   background-position: left center;
   background-repeat: no-repeat;
   padding-inline-start: 30px;
   font-family: inter, serif;
-} */
+}
 
 textarea {
   border: none;
@@ -633,7 +632,9 @@ footer {
     line-height: 20px;
   }
 
-  .menu-icon,  #close-menu-icon, .nav-links-divider {
+  .menu-icon,
+  #close-menu-icon,
+  .nav-links-divider {
     display: none;
   }
 
