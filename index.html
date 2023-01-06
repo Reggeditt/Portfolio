@@ -263,38 +263,26 @@
             </p>
           </div>
         </div>
-        <div class="contact-form">
-          <form action="https://formspree.io/f/xoqbgdpy">
-            <div class="desktop-name">
-              <input
-                type="text"
-                maxlength="30"
-                name="name"
-                placeholder="first name"
-                required
-              />
-              <input
-                type="text"
-                maxlength="30"
-                name="name"
-                placeholder="last name"
-                required
-              />
-            </div>
+        <div class="contact-form" id="contact-form">
+          <form action="https://formspree.io/f/xoqbgdpy" method="post">
             <input
               type="name"
               maxlength="30"
               name="name"
+              id="name"
               placeholder="Full name"
-              required
+              required tabindex="0"
             />
+            <small id="name-err"></small>
             <input
               type="email"
               maxlength="30"
               name="email"
+              id="email"
               placeholder="Email"
               required
             />
+            <small id="email-err"></small>
             <textarea
               name="comments"
               id="comment-box"
