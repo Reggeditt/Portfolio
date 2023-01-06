@@ -131,7 +131,7 @@ for (let i = 0; i < projectButtonElements.length; i += 1) {
     window.location.reload();
   });
 
-  // window.onclick = (event) => {
+  window.onclick = (event) => {
     // if (event.target === modalContainerElement) {
       // modalContainerElement.style.display = 'none';
       // window.location.reload();
