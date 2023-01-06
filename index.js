@@ -74,7 +74,7 @@ formElement.addEventListener('submit', (event) => {
   if (email.toLowerCase() !== email) {
     event.preventDefault();
     errmessages.push(
-      'email must all be in lowercase letters. form was not submitted'
+      'email must all be in lowercase letters. form was not submitted',
     );
     const emailErrElement = document.getElementById('email-err');
     const [firstErrorMessage] = errmessages;
