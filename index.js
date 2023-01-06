@@ -132,7 +132,7 @@ for (let i = 0; i < projectButtonElements.length; i += 1) {
   });
 
   window.onclick = (event) => {
-    // if (event.target === modalContainerElement) {
+    if (event.target === modalContainerElement) {
       // modalContainerElement.style.display = 'none';
       // window.location.reload();
     // }
