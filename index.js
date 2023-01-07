@@ -265,4 +265,3 @@ closeModalIconElement.addEventListener('click', () => {
   window.location.reload();
   document.body.style.overflow = 'auto';
 });
-
