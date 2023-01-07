@@ -64,46 +64,51 @@ menuLinkContactElement.addEventListener('click', () => {
 });
 
 // ----------------------- contact validation ---------------------------------
-const formElement = document.getElementById('contact-form');
-const formNameElement = document.getElementById('name');
-const formEmailElement = document.getElementById('email');
+// const formElement = document.getElementById('contact-form');
+// const formNameElement = document.getElementById('name');
+// const formEmailElement = document.getElementById('email');
 
-formElement.addEventListener('submit', (event) => {
-  const email = formEmailElement.value;
-  const errmessages = [];
-  if (email.toLowerCase() !== email) {
-    event.preventDefault();
-    errmessages.push(
-      'email must all be in lowercase letters. form was not submitted',
-    );
-    const emailErrElement = document.getElementById('email-err');
-    const [firstErrorMessage] = errmessages;
-    emailErrElement.innerText = firstErrorMessage;
-  }
-});
+const formElements = {
+  formElement: document.getElementById('contact-form'),
+  formNameElement: document.getElementById('name'),
+  formEmailElement: document.getElementById('email'),
+  commentElement: document.getElementById('comment-box'),
+  emailErrElement: document.getElementById('email-err'),
+};
 
 const formData = {
-  commentElement: document.getElementById('comment-box'),
+  errmessages: [],
+  error: formElements.emailErrElement.value,
 };
 
-formNameElement.onchange = () => {
-  formData.nameElement = document.getElementById('name').value;
-  localStorage.setItem('nameInput', formData.nameElement);
-};
+formElements.formElement.addEventListener('submit', (event) => {
+  formData.name = formElements.formNameElement.value;
+  formData.email = formElements.formEmailElement.value;
+  formData.commentElement = formElements.commentElement.value;
 
-formEmailElement.onchange = () => {
-  formData.emailElement = document.getElementById('email').value;
-  localStorage.setItem('emailInput', formData.emailElement);
-};
+  // const email = formData.formEmailElement.value;
+  // formData.errmessages = [];
+  if (formData.email.toLowerCase() !== formData.email) {
+    event.preventDefault();
+    formData.errmessages.push(
+      'email must all be in lowercase letters. form was not submitted',
+    );
+    // const emailErrElement = document.getElementById('email-err');
+    const [firstErrorMessage] = formData.errmessages;
+    formElements.emailErrElement.innerText = firstErrorMessage;
+  }
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
 
-formNameElement.addEventListener('click', () => {
-  if (window.localStorage.getItem('nameInput') !== null) {
-    formNameElement.value = window.localStorage.getItem('nameInput');
+formElements.formNameElement.addEventListener('click', () => {
+  // alert(JSON.parse(window.localStorage.getItem('formData')).name);
+  if (JSON.parse(window.localStorage.getItem('formData')).name !== null) {
+    formElements.formNameElement.value = JSON.parse(window.localStorage.getItem('formData')).name;
   }
 });
 
-formEmailElement.addEventListener('click', () => {
-  if (window.localStorage.getItem('emailInput') !== null) {
-    formEmailElement.value = window.localStorage.getItem('emailInput');
+formElements.formEmailElement.addEventListener('click', () => {
+  if (JSON.parse(window.localStorage.getItem('formData')).email !== null) {
+    formElements.formEmailElement.value = JSON.parse(window.localStorage.getItem('formData')).email;
   }
 });
