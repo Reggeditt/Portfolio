@@ -1,146 +1,272 @@
 /* menu interaction elements */
-const menuIconElement = document.getElementById("menu-icon");
-const menuElement = document.getElementById("menu");
-const closeMenuElement = document.getElementById("close-menu-icon");
-const navElement = document.getElementById("nav");
-const logoElement = document.getElementById("logo");
-const menuLinkPortfolioElement = document.getElementById("menu-link-portfolio");
-const menuLinkAboutElement = document.getElementById("menu-link-about");
-const menuLinkContactElement = document.getElementById("menu-link-contact");
+const menuIconElement = document.getElementById('menu-icon');
+const menuElement = document.getElementById('menu');
+const closeMenuElement = document.getElementById('close-menu-icon');
+const navElement = document.getElementById('nav');
+const logoElement = document.getElementById('logo');
+const menuLinks = document.querySelectorAll('.menu-link');
 
 // menu icon code starts here
-menuIconElement.addEventListener("click", () => {
-  menuElement.style.display = "flex";
-  menuIconElement.style.display = "none";
-  logoElement.style.display = "none";
-  navElement.style.width = "100%";
-  navElement.style.height = "100vh";
-  navElement.style.paddingTop = "20px";
-  navElement.style.paddingBottom = "75%";
+menuIconElement.addEventListener('click', () => {
+  menuElement.style.display = 'flex';
+  menuIconElement.style.display = 'none';
+  logoElement.style.display = 'none';
+  navElement.style.width = '100%';
+  navElement.style.height = '100vh';
+  navElement.style.paddingTop = '20px';
+  navElement.style.paddingBottom = '75%';
 });
 
-closeMenuElement.addEventListener("click", () => {
-  menuElement.style.display = "none";
-  menuIconElement.style.display = "inline-block";
-  logoElement.style.display = "inline-block";
-  navElement.style.width = "fit-content";
-  navElement.style.height = "18px";
-  navElement.style.paddingTop = "0";
-  navElement.style.paddingBottom = "0";
+closeMenuElement.addEventListener('click', () => {
+  menuElement.style.display = 'none';
+  menuIconElement.style.display = 'inline-block';
+  logoElement.style.display = 'inline-block';
+  navElement.style.width = 'fit-content';
+  navElement.style.height = '18px';
+  navElement.style.paddingTop = '0';
+  navElement.style.paddingBottom = '0';
 });
 
-menuLinkPortfolioElement.addEventListener("click", () => {
-  if (window.screen.width < 768) {
-    menuElement.style.display = "none";
-    menuIconElement.style.display = "inline-block";
-    logoElement.style.display = "inline-block";
-    navElement.style.width = "fit-content";
-    navElement.style.height = "18px";
-    navElement.style.paddingTop = "0";
-    navElement.style.paddingBottom = "0";
+menuLinks.forEach((menuLink) => {
+  menuLink.addEventListener('click', () => {
+    if (window.screen.width < 768) {
+      menuElement.style.display = 'none';
+      menuIconElement.style.display = 'inline-block';
+      logoElement.style.display = 'inline-block';
+      navElement.style.width = 'fit-content';
+      navElement.style.height = '18px';
+      navElement.style.paddingTop = '0';
+      navElement.style.paddingBottom = '0';
+    }
+  });
+});
+
+let projectCardData = [
+  {
+    header: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    stack: ['html', 'bootstrap', 'Ruby'],
+    buttonText: 'See Project',
+    buttonUrl: '#',
+  },
+  {
+    header: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    stack: ['html', 'bootstrap', 'Ruby'],
+    buttonText: 'See Project',
+    buttonUrl: '#',
+  },
+  {
+    header: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    stack: ['html', 'bootstrap', 'Ruby'],
+    buttonText: 'See Project',
+    buttonUrl: '#',
+  },
+  {
+    header: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    stack: ['html', 'bootstrap', 'Ruby'],
+    buttonText: 'See Project',
+    buttonUrl: '#',
+  },
+  {
+    header: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    stack: ['html', 'bootstrap', 'Ruby'],
+    buttonText: 'See Project',
+    buttonUrl: '#',
+  },
+  {
+    header: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    stack: ['html', 'bootstrap', 'Ruby'],
+    buttonText: 'See Project',
+    buttonUrl: '#',
+  },
+];
+if (window.screen.width >= 768) {
+  projectCardData = [
+    {
+      header: ' ',
+      description: ' ',
+      stack: [' ', ' ', ' '],
+      buttonText: 'See Project',
+      buttonUrl: '#',
+    },
+    {
+      header: 'Data Dashboard Healthcare',
+      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+      stack: ['html', 'bootstrap', 'Ruby'],
+      buttonText: 'See Project',
+      buttonUrl: '#',
+    },
+    {
+      header: 'Website Protfolio',
+      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+      stack: ['html', 'bootstrap', 'Ruby'],
+      buttonText: 'See Project',
+      buttonUrl: '#',
+    },
+    {
+      header: 'Profesional Art Printing Data More',
+      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+      stack: ['html', 'bootstrap', 'Ruby'],
+      buttonText: 'See Project',
+      buttonUrl: '#',
+    },
+    {
+      header: 'Data Dashboard Healthcare',
+      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+      stack: ['html', 'bootstrap', 'Ruby'],
+      buttonText: 'See Project',
+      buttonUrl: '#',
+    },
+    {
+      header: 'Website Portfolio',
+      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+      stack: ['html', 'bootstrap', 'Ruby'],
+      buttonText: 'See Project',
+      buttonUrl: '#',
+    },
+  ];
+}
+
+// a function to generate the project cards
+function createProjectCard(data) {
+  // project card element
+  const projectCard = document.createElement('div');
+  projectCard.classList.add('project-card');
+
+  // header element
+  const headerElement = document.createElement('h2');
+  headerElement.classList.add('header-text');
+  headerElement.textContent = data.header;
+
+  // description element
+  const descriptionElement = document.createElement('p');
+  descriptionElement.classList.add('description2-text');
+  descriptionElement.textContent = data.description;
+
+  // stack list on project card
+  const stackList = document.createElement('ul');
+  stackList.classList.add('stack-list');
+
+  for (let i = 0; i < data.stack.length; i += 1) {
+    const listItem = document.createElement('li');
+    const link = document.createElement('a');
+    link.setAttribute('href', '#');
+    link.textContent = data.stack[i];
+    listItem.appendChild(link);
+    stackList.appendChild(listItem);
   }
-});
 
-menuLinkAboutElement.addEventListener("click", () => {
-  if (window.screen.width < 768) {
-    menuElement.style.display = "none";
-    menuIconElement.style.display = "inline-block";
-    logoElement.style.display = "inline-block";
-    navElement.style.width = "fit-content";
-    navElement.style.height = "18px";
-    navElement.style.paddingTop = "0";
-    navElement.style.paddingBottom = "0";
-  }
-});
+  // Create the button element and set its text content and click event listener
+  const button = document.createElement('button');
+  button.classList.add('pjt-button', 'main-btn');
+  button.textContent = data.buttonText;
+  button.addEventListener('click', () => {
+    window.location.href = data.buttonUrl;
+  });
 
-menuLinkContactElement.addEventListener("click", () => {
-  if (window.screen.width < 768) {
-    menuElement.style.display = "none";
-    menuIconElement.style.display = "inline-block";
-    logoElement.style.display = "inline-block";
-    navElement.style.width = "fit-content";
-    navElement.style.height = "18px";
-    navElement.style.paddingTop = "0";
-    navElement.style.paddingBottom = "0";
-  }
-});
+  projectCard.appendChild(headerElement);
+  projectCard.appendChild(descriptionElement);
+  projectCard.appendChild(stackList);
+  projectCard.appendChild(button);
+
+  return projectCard;
+}
+
+const projectsContainer = document.getElementById('project-cards-container');
+for (let a = 0; a < projectCardData.length; a += 1) {
+  const projectCard = createProjectCard(projectCardData[a]);
+  projectsContainer.appendChild(projectCard);
+}
 
 /* modal popup window elements */
-const projectButtonElements = document.getElementsByClassName("pjt-button");
-const projectModalContentElements = document.getElementsByClassName(
-  "project-modal-content"
-);
-const modalContainerElement = document.getElementById("modal-container");
-const closeModalIconElement = document.getElementById("close-modal-icon");
-const bodyElement = document.getElementById("body");
+const projectButtonElements = document.querySelectorAll('.pjt-button');
 
-const popupProjectName = document.createElement("h2");
-popupProjectName.className = "modal-heading header-text";
-const popupStack1 = document.createElement("span");
-popupStack1.className = "modal-stacks";
-const popupStack2 = document.createElement("span");
-popupStack2.className = "modal-stacks";
-const popupStack3 = document.createElement("span");
-popupStack3.className = "modal-stacks";
-const div1 = document.createElement("div");
-div1.className = "divide";
-const div2 = document.createElement("div");
-div2.className = "illustration works-img";
-const description = document.createElement("p");
-description.className = "modal-description description2-text";
-const popupButton1 = document.createElement("a");
-popupButton1.className = "main-btn see-live";
-popupButton1.href = "https://www.google.com/";
-const popupButton2 = document.createElement("a");
-popupButton2.className = "main-btn see-source";
-popupButton2.href = "https://github.com/Reggeditt/Portfolio/";
+const createModalContentElements = (i) => {
+  const popupProjectName = document.createElement('h2');
+  popupProjectName.classList.add('modal-heading', 'header-text');
+  popupProjectName.textContent = `Project ${i + 1}`;
+  const popupStack1 = document.createElement('span');
+  popupStack1.classList.add('modal-stacks');
+  popupStack1.textContent = 'Html';
+  const popupStack2 = document.createElement('span');
+  popupStack2.classList.add('modal-stacks');
+  popupStack2.textContent = 'Bootstrap';
+  const popupStack3 = document.createElement('span');
+  popupStack3.classList.add('modal-stacks');
+  popupStack3.textContent = 'Ruby on Rails';
+  const div1 = document.createElement('div');
+  div1.classList.add('divide');
+  const div2 = document.createElement('div');
+  div2.classList.add('illustration');
+  const modalDescription = document.createElement('p');
+  modalDescription.classList.add('modal-description', 'description2-text');
+  modalDescription.textContent = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent';
+  const popupButton1 = document.createElement('a');
+  popupButton1.classList.add('main-btn', 'see-live');
+  popupButton1.href = 'https://www.google.com/';
+  popupButton1.textContent = 'See live';
+  const popupButton2 = document.createElement('a');
+  popupButton2.classList.add('main-btn', 'see-source');
+  popupButton2.href = 'https://github.com/Reggeditt/Portfolio/';
+  popupButton2.textContent = 'See source';
+
+  return [
+    popupProjectName,
+    div1,
+    popupStack1,
+    popupStack2,
+    popupStack3,
+    div1,
+    div2,
+    modalDescription,
+    popupButton1,
+    popupButton2,
+    div1,
+  ];
+};
+
+const modalContainerElement = document.createElement('div');
+modalContainerElement.id = 'project-modal-container';
+const modalContentElement = document.createElement('div');
+modalContentElement.id = 'project-modal-content';
+const closeModalIconElement = document.createElement('img');
+closeModalIconElement.id = 'close-modal-icon';
+closeModalIconElement.src = 'assets/images/menu-close-icon.png';
+modalContentElement.appendChild(closeModalIconElement);
 
 for (let i = 0; i < projectButtonElements.length; i += 1) {
-  projectButtonElements[i].addEventListener("click", () => {
-    const modalChildElements = [
-      popupProjectName,
-      div1,
-      popupStack1,
-      popupStack2,
-      popupStack3,
-      div1,
-      div2,
-      description,
-      popupButton1,
-      popupButton2,
-      div1,
-    ];
-
-    // Set the innerHTML of each child element
-    modalChildElements[0].innerHTML = `Project ${i + 1}`;
-    modalChildElements[2].innerHTML = "Html";
-    modalChildElements[3].innerHTML = "Bootstrap";
-    modalChildElements[4].innerHTML = "Ruby on rails";
-    modalChildElements[7].innerHTML =
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
-    modalChildElements[8].innerHTML = "See live";
-    modalChildElements[9].innerHTML = "see source";
-
-    for (let i = 0; i < projectModalContentElements.length; i += 1) {
-      for (let j = 0; j < modalChildElements.length; j += 1) {
-        projectModalContentElements[0].appendChild(
-          modalChildElements[j].cloneNode(true)
-        );
-      }
+  projectButtonElements[i].addEventListener('click', () => {
+    const modalContentElements = createModalContentElements(i);
+    for (let j = 0; j < modalContentElements.length; j += 1) {
+      modalContentElement.appendChild(modalContentElements[j]);
     }
-    modalContainerElement.style.display = "block";
-    bodyElement.style.overflow = "hidden";
-  });
-
-  closeModalIconElement.addEventListener("click", () => {
-    modalContainerElement.style.display = "none";
-    window.location.reload();
-  });
-
-  window.onclick = (event) => {
-    if (event.target === modalContainerElement) {
-      modalContainerElement.style.display = "none";
-      window.location.reload();
+    if (modalContainerElement.style.display === 'none') {
+      modalContainerElement.style.display = 'none';
+    } else {
+      modalContainerElement.style.display = 'block';
+      document.body.style.overflow = 'hidden';
     }
-  };
+  });
 }
+
+modalContainerElement.appendChild(modalContentElement);
+document.body.appendChild(modalContainerElement);
+
+closeModalIconElement.addEventListener('click', () => {
+  modalContainerElement.style.display = 'none';
+  window.location.reload();
+  document.body.style.overflow = 'auto';
+});
+
+window.onclick = (event) => {
+  if (event.target === modalContainerElement) {
+    modalContainerElement.style.display = 'none';
+    window.location.reload();
+    document.body.style.overflow = 'auto';
+  }
+};
