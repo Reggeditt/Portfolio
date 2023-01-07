@@ -260,6 +260,7 @@ for (let i = 0; i < projectButtonElements.length; i += 1) {
 modalContainerElement.appendChild(modalContentElement);
 document.body.appendChild(modalContainerElement);
 
+// modal close button
 closeModalIconElement.addEventListener('click', () => {
   modalContainerElement.style.display = 'none';
   window.location.reload();
