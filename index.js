@@ -64,19 +64,51 @@ menuLinkContactElement.addEventListener('click', () => {
 });
 
 // ----------------------- contact validation ---------------------------------
-const formElement = document.getElementById('contact-form');
+// const formElement = document.getElementById('contact-form');
 // const formNameElement = document.getElementById('name');
-const formEmailElement = document.getElementById('email');
+// const formEmailElement = document.getElementById('email');
 
-formElement.addEventListener('submit', (event) => {
-  const email = formEmailElement.value;
-  const errmessages = [];
-  if (email.toLowerCase() !== email) {
+const formElements = {
+  formElement: document.getElementById('contact-form'),
+  formNameElement: document.getElementById('name'),
+  formEmailElement: document.getElementById('email'),
+  commentElement: document.getElementById('comment-box'),
+  emailErrElement: document.getElementById('email-err'),
+};
+
+const formData = {
+  errmessages: [],
+  error: formElements.emailErrElement.value,
+};
+
+formElements.formElement.addEventListener('submit', (event) => {
+  formData.name = formElements.formNameElement.value;
+  formData.email = formElements.formEmailElement.value;
+  formData.commentElement = formElements.commentElement.value;
+
+  // const email = formData.formEmailElement.value;
+  // formData.errmessages = [];
+  if (formData.email.toLowerCase() !== formData.email) {
     event.preventDefault();
-    errmessages.push('email must all be in lowercase letters. form was not submitted');
-    const emailErrElement = document.getElementById('email-err');
-    // Destructure the entire `errmessages` array and access the first element using an index
-    const [firstErrorMessage] = errmessages;
-    emailErrElement.innerText = firstErrorMessage;
+    formData.errmessages.push(
+      'email must all be in lowercase letters. form was not submitted',
+    );
+    // const emailErrElement = document.getElementById('email-err');
+    const [firstErrorMessage] = formData.errmessages;
+    formElements.emailErrElement.innerText = firstErrorMessage;
+  }
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+formElements.formNameElement.addEventListener('click', () => {
+  // alert(JSON.parse(window.localStorage.getItem('formData')).name);
+  if (JSON.parse(window.localStorage.getItem('formData')).name !== null) {
+    formElements.formNameElement.value = JSON.parse(window.localStorage.getItem('formData')).name;
+  }
+});
+
+formElements.formEmailElement.addEventListener('click', () => {
+  if (JSON.parse(window.localStorage.getItem('formData')).email !== null) {
+    formElements.formEmailElement.value = JSON.parse(window.localStorage.getItem('formData')).email;
   }
 });
