@@ -266,10 +266,3 @@ closeModalIconElement.addEventListener('click', () => {
   document.body.style.overflow = 'auto';
 });
 
-window.onclick = (event) => {
-  if (event.target === modalContainerElement) {
-    modalContainerElement.style.display = 'none';
-    window.location.reload();
-    document.body.style.overflow = 'auto';
-  }
-};
