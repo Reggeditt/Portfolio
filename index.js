@@ -177,11 +177,14 @@ function createProjectCard(data) {
   return projectCard;
 }
 
-const projectsContainer = document.getElementById('project-cards-container');
+const projectsContainer = document.createElement('div');
+projectsContainer.className = 'projects';
 for (let a = 0; a < projectCardData.length; a += 1) {
   const projectCard = createProjectCard(projectCardData[a]);
   projectsContainer.appendChild(projectCard);
 }
+const works = document.getElementById('works');
+works.insertBefore(projectsContainer, works.children[2]);
 
 /* modal popup window elements */
 const projectButtonElements = document.querySelectorAll('.pjt-button');
