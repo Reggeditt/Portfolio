@@ -367,6 +367,103 @@ main {
   border: none;
 }
 
+#project-modal-container {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  padding-block: 100px;
+  top: 0;
+  left: 0;
+}
+
+#project-modal-content {
+  background-color: white;
+  position: relative;
+  margin: auto;
+  padding-inline: 15px;
+  border: 1px solid #888;
+  width: 80%;
+  max-height: 750px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.modal-heading {
+  font-size: 50px;
+  padding-bottom: 40px;
+}
+
+#close-modal-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal-stacks {
+  box-sizing: content-box;
+  color: var(--text-color-8);
+  border: 1px solid #979493;
+  padding: 5px;
+  width: 250px;
+  height: 156px;
+  margin-inline-end: 10px;
+  margin-block: 20px;
+  font-size: 13px;
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 0.24);
+}
+
+.divide {
+  width: 100%;
+  margin-block: 20px;
+}
+
+.illustration {
+  min-width: 266px;
+  height: 220px;
+  background-image: url(assets/images/modal-illustration.png);
+  background-position: center;
+  background-size: cover;
+  margin-top: 15px;
+}
+
+.modal-description {
+  font-size: 16px;
+  line-height: 24px;
+  padding-block: 20px;
+}
+
+.project-modal-container .main-btn {
+  padding-inline-start: 15px;
+  padding-inline-end: 25px;
+  padding-block: 10px;
+  font-size: 15px;
+  height: 20px;
+  margin-inline: 10px;
+}
+
+.see-live {
+  background-image: url(assets/images/see-live-icon.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-inline-start: 15px;
+  padding-inline-end: 25px;
+  padding-block: 10px;
+  margin-inline-end: 10px;
+}
+
+.see-source {
+  background-image: url(assets/images/see-source-icon.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-inline-start: 15px;
+  padding-inline-end: 25px;
+  padding-block: 10px;
+}
+
 /* about section styles start here... */
 .about {
   height: 1730px;
@@ -733,6 +830,78 @@ footer {
 
   .project-card:hover .pjt-button {
     opacity: 1;
+  }
+
+  .modal-heading {
+    font-size: 50px;
+    padding-bottom: 40px;
+  }
+
+  #close-modal-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  .modal-stacks {
+    box-sizing: content-box;
+    color: var(--text-color-8);
+    border: 1px solid #979493;
+    padding: 5px;
+    width: 250px;
+    height: 156px;
+    font-size: 15px;
+    margin-inline-end: 10px;
+    margin-block: 20px;
+    line-height: 20px;
+    background-color: rgba(255, 255, 255, 0.24);
+  }
+
+  .illustration {
+    max-width: 50%;
+    min-height: 266px;
+    max-height: 448px;
+  }
+
+  .modal-description {
+    max-width: 48%;
+    font-size: 16px;
+    line-height: 20px;
+    padding-inline-start: 20px;
+    display: block;
+    position: absolute;
+    top: 120px;
+    right: 20px;
+  }
+
+  .project-modal-container .main-btn {
+    padding-inline-start: 15px;
+    padding-inline-end: 25px;
+    padding-block: 10px;
+    font-size: 15px;
+    height: 20px;
+    margin-inline: 10px;
+  }
+
+  .see-live {
+    position: relative;
+    left: 52%;
+    bottom: 30px;
+    width: 250px;
+    padding-inline-start: 15px;
+    padding-inline-end: 25px;
+    padding-block: 10px;
+    margin: 0;
+  }
+
+  .see-source {
+    position: relative;
+    left: 55%;
+    bottom: 30px;
+    width: 200px;
+    padding-inline-start: 15px;
+    padding-inline-end: 25px;
+    padding-block: 10px;
   }
 
   .about {
